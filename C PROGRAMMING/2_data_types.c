@@ -98,17 +98,43 @@
 // Modifier : unsigned char (0 to 255), signed char (-128 to 127)
 
 // Programmes---------------------
-#include <stdio.h>
+// #include <stdio.h>
 
-void mul(){
-    char x='#';
-    char y='%';
-    int res=x+y;
-    printf("Result : %d\n",res);
-    printf("Charectr : %c\n",res);
-}
+// void mul(){
+//     char x='#';
+//     char y='%';
+//     int res=x+y;
+//     printf("Result : %d\n",res);
+//     printf("Charectr : %c\n",res);
+// }
+// int main(){
+//     printf("-------------Multiplication------------------\n");
+//     mul();
+//     return 0;
+// }
+
+// 4. Boolean data types
+// Store : true or false
+// Ex:boolean var_name=true;
+// Range:true or false
+// Formatidentfier  %d
+// Size:1 byte
+// Modifier : none
+
+#include<stdio.h>
+#include<stdbool.h>
 int main(){
-    printf("-------------Multiplication------------------\n");
-    mul();
+    true_false();
+    printf("Hello DREAMER");
     return 0;
+    printf("Hello DREAMER2");
+
 }
+
+void true_false(){
+    bool x=true;
+    bool y=false;
+    printf("Boolean Value : %d\n",x);
+    printf("Boolean Value : %d\n",y);
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button onclick="namaste()" >Hello Click Me</button>
+    <center><h1 id="get"></h1></center> -->
+
+    <!-- <script>
+        // alert("hi") 
+
+        let get=document.getElementById('get')
+        function namaste(){ // defining a function
+            // block of function : namaste
+            // alert("function ke andar");
+
+            let name=prompt("ENTER YOUR NAME : ");
+            get.innerHTML=`${name}`
+            
+        }
+        // alert("function ke bahar");
+     
+         // calling a function
+
+
+    </script> -->
+
+
+    <span id="tbl"></span>
+    <button onclick="table()">Click ME</button>
+
+    <script>
+        // print table by taking input from user.
+        let tbl=document.getElementById('tbl')
+        function table(){
+            let user_num=Number(prompt("ENTER YOUR NUMBER FOR TABLE : "))
+            if (user_num >0){
+
+                    for (let i=1;i<11;i++){
+                    data=`${user_num} x ${i} = ${user_num*i} <br>`
+                    tbl.innerHTML += data;
+                }
+                
+            }
+           
+        }
+    </script>
+</body>
+</html>

@@ -40,3 +40,55 @@
 // stu_name[2]="Dreamer Infotech"
 // console.log(stu_name);
 
+
+// ---------------- Traversing of array
+// 1.For loop
+// console.log("---------------------- For loop ------------------")
+// let stu_name=['shivani','babita','abhinav','aaditya','dev'];
+// let size=stu_name.length
+// for (let i=0 ;size>i ;i+=1){
+
+//     console.log(stu_name[i])
+// }
+
+
+
+// 2.For in loop
+// console.log("---------------------- For in loop ------------------")
+// let stu_name=['shivani','babita','abhinav','aaditya','dev'];
+// for (i in stu_name){
+//     console.log(stu_name[i],":",i)
+// }
+
+
+// 3.For of loop
+// console.log("---------------------- For of loop ------------------")
+// let stu_name=['shivani','babita','abhinav','aaditya','dev'];
+// for (i of stu_name){
+//     console.log(i)
+// }
+
+
+// // 4.While loop 
+// console.log("---------------------- While loop ------------------")
+// let stu_name=['shivani','babita','abhinav','aaditya','dev'];
+// let s=stu_name.length
+// let i=0;
+// while(i<s){
+//     console.log(stu_name[s-1])
+//     s--;
+// }
+
+
+// 4.Do While loop 
+// console.log("---------------------- Do While loop ------------------")
+// let stu_name=['shivani','babita','abhinav','aaditya','dev'];
+// let s=stu_name.length
+// let i=0;
+// do{
+//     console.log(stu_name[i])
+//     i++;
+// }while(i<s)
+
+
+// ---------------In-builted methods of array

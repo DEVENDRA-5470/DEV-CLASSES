@@ -85,11 +85,87 @@
 // let stu_name=['shivani','babita','abhinav','aaditya','dev'];
 // let s=stu_name.length
 // let i=0;
-// do{43
+// do{
 //     console.log(stu_name[i])
 //     i++;
 // }while(i<s)
 
-let num=[10,20,40,50,60]
 
 // ---------------In-builted methods of array
+// push : Add an element last.
+// let num=[10,20,40,50,60]
+// num.push(20)
+// console.log(num)
+
+// unshift : Add ele at start.
+// let num=[10,20,40,50,60]
+// num.unshift(20)
+// console.log(num)
+
+// shift : Remove ele from start.
+// let num=[10,20,40,50,60]
+// num.shift()
+// num.shift()
+// console.log(num)
+
+// pop() : Remove element from last.
+// let num=[10,20,40,50,60]
+// let poped=num.pop()
+// console.log(num)
+// console.log(poped)
+
+
+// Reverse (): Return reversed element of array.
+// let num=[10,20,40,50,60]
+// num.reverse()
+// console.log(num)
+
+// // includes (): Return the presence of elemnt in the array.
+// let num=[10,20,40,50,60]
+// data=num.includes(10)
+// console.log(data)
+
+
+// indexof (): Return the index position of elemnt in the array.
+// let num=[10,20,40,50,60,10,23,89,10]
+// data=num.indexOf(10,6)
+// console.log(data)
+
+
+// lastindexof (): Return the last index of given element in the array.
+// let num=[10,20,40,50,60,10,23,89,10];
+// data=num.lastIndexOf(10);
+// console.log(data);
+
+
+// Concate ()
+// let first_c=["dev","shivani","aditya","abhnav"];
+// let second_c=["babita",
+//     "monika",
+//     "nitesh",
+//     "arjun"];
+// let third_c=first_c.concat(second_c)
+// console.log(third_c);
+
+
+// slice (start:0,endpoint): Return a shallow copy of a portion form statindex to endindex.
+// let first_c=["dev","shivani","aditya","abhnav"];
+// let second_c=first_c.slice(2,3)
+// console.log(second_c);
+// console.log(first_c); // original array remain same.
+
+// splice(startindex,deletecount,item1,item2,item3,....)
+// Remove():
+// let arr=[1,2,3,4,6,7,8,9,10]
+// arr.splice(5)
+// // arr.splice(0)
+// console.log(arr)
+
+
+// Replace():
+// let arr=[1,2,3,4,6,7,8,9,10]
+// arr.splice(1,0,"babita","abhinav")
+// // arr.splice(0)
+// console.log(arr)
+
+// -------------- Array Destructuring..

@@ -85,10 +85,11 @@
 // let stu_name=['shivani','babita','abhinav','aaditya','dev'];
 // let s=stu_name.length
 // let i=0;
-// do{
+// do{43
 //     console.log(stu_name[i])
 //     i++;
 // }while(i<s)
 
+let num=[10,20,40,50,60]
 
 // ---------------In-builted methods of array

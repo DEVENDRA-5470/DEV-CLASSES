@@ -157,8 +157,8 @@
 // splice(startindex,deletecount,item1,item2,item3,....)
 // Remove():
 // let arr=[1,2,3,4,6,7,8,9,10]
-// arr.splice(5)
-// // arr.splice(0)
+// arr.splice(2,0,"x","y")
+// // // arr.splice(0)
 // console.log(arr)
 
 
@@ -169,3 +169,60 @@
 // console.log(arr)
 
 // -------------- Array Destructuring..
+// Array destructuring allow you to unpack values from array or iterables
+// into distinct variable
+// It allow to store multiple value of an array in single a variables
+
+// 1.Basic Sturcturing
+// let stu_name=["shivani","dev","babita","nisha","aditya"]
+// let [u1,u2,u3,u4]=stu_name;
+// console.log(u1,u2,u3,u4)
+
+// 2. Skipping Elements
+// let stu_name=["shivani","dev","babita","nisha","aditya"]
+// let [u1, , ,u2]=stu_name;
+// console.log(u1,u2)
+
+// 3.Rest Operator.
+// let stu_name=["shivani","dev","babita","nisha","aditya"]
+// let [u1,,u2,...all]=stu_name;
+// console.log(u1,u2)
+// console.log(all)
+
+// 4.Default values
+// let stu_name=["shivani","babita"]
+// let [u1,u2,u3="d"]=stu_name;
+// console.log(u1)
+// console.log(u2)
+// console.log(u3)
+
+
+//----------------- Array Structuring...
+// Array structuring refers to the process of creating
+// a array in a structured way ,either by directly assigning
+// values to it or by using the spread operator or rest operator.
+
+// 1.Basic Structuring.
+// let [a,b,c,d="x"]=[1,2,3,10];
+// console.log(a,b,c,d);
+
+// 2.Nested Structuring.
+// let [a,[b,c]]=[10,['babita','shivani']]
+// console.log(a,b,c)
+
+// 3.Swapping Vaiables
+// let a="dreamer" ,b="infotech";
+// [a,b]=[b,a]
+// console.log(a,b)
+
+// 4.Skipping values
+// let [u1,,u2,,u3]=['dreamer','infotech','faridabad','javascript','a','b']
+// console.log(u1)
+// console.log(u2)
+// console.log(u3)
+
+// 5.Spread opertor
+let a=[1,2,3];
+let b=[4,5,6];
+let c=[...b,...a];
+console.log(c)

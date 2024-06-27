@@ -57,6 +57,7 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "1_INTO_OF _C AND D++ .C": "cpp"
+    "1_INTO_OF _C AND D++ .C": "cpp",
+    "BREAK_CONTINUE.C": "cpp"
   }
 }

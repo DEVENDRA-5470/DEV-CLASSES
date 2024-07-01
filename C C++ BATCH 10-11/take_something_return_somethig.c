@@ -22,3 +22,5 @@ int main(){
 
     return 0;
 }
+// Waf to check number odd or even passed as arguments by taking users input.
+// Waf to print table of a number passed as arguments by taking users input. 

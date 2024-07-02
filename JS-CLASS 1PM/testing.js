@@ -1,73 +1,10 @@
-// let p=10 // initialization
-// while (p>=0){
-//     console.log("Dreamer infotech ",p);
-//   p--; // increamenter/ decreamenter
-// }
+        function random_color(){
+            let char='0123456789ABCDEF';
+            let code='#'
 
-// let p=1 // initialization
-// while (p<10){
-//     p++; // increamenter/ decreamenter
-//     console.log("Dreamer infotech ",p);
-// }
-
-// let c= 1;
-// while(c<10){
-//     if (c%3==0){
-//         break;
-//     }
-//     console.log(c);
-// c++;
-// }
-
-// let c= 1;
-// while(c<10){
-//     if (c==4){
-//         c++;
-//         continue;
-//     }
-//     console.log(c);
-// c++;
-// }
-
-
-// let c= 1;
-// while(c<10){
-//     if (c%5==0){
-//         c++;
-//         continue;
-//     }
-//     if (c==5){
-//         break;
-//     }
-//     console.log(c);
-// c++;
-// }
-// let data="dreamer infotech";
-// let i=0;
-// while(data.length>i){
-//     if(data[i]=="d" || data[i]=="e"){
-//         i++;
-//         continue
-//     }
-//     console.log(data[i])
-// i++;
-// }
-
-// let a=0;
-// while(a<4){
-//     console.log("This is outer loop ",a)
-
-// a++;
-
-//     let b=0;
-//     while (b<4) {
-//         console.log("This is inner loop",b)
-
-//         b++;
-//     }
-
-// }
-
-
-
-
+            for (let i=0 ; i<6 ; i++){
+                code=code+char[Math.floor(Math.random()*16)]
+            }
+            console.log(code)
+        }
+        random_color()

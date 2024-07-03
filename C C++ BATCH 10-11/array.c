@@ -55,3 +55,17 @@ int main(){
     second_arr();
     return 0;
 }
+
+
+// Data Structure and algorithms.
+
+// 1.Linear search
+// 2.Binary search
+// 3.Bubble sort
+// 4.Quick sort
+// 5.Insertion sort
+// 6.Quick sort
+// 7.Merge sort
+// 8.Counting sort
+// 9.Radix sort
+// 10.Heap sort

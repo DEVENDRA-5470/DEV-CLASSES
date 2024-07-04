@@ -15,3 +15,11 @@ int main(){
 
     return 0;
 }
+
+
+// Write a function to swap charecter given by user and by arguments.
+c1='a'
+c2='b'
+Output:
+c1='b';
+c2='a'

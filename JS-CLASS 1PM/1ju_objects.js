@@ -146,3 +146,39 @@
 // stu_data.hobby='Pubg';
 
 // console.log(stu_data)
+
+// --------- Traversing of obects
+// const stu_data={
+//         name:'Aditya',
+//         age:17,
+//         marks:90,
+//         mob:80809000,
+// }
+// 1.for loop
+// let s=Object.keys(stu_data).length;
+// for (let i=0; i<s ; i++){
+//     console.log(Object.keys(stu_data)[i]+":"+stu_data[Object.keys(stu_data)[i]])
+// }
+
+//2.for of loop
+// const stu_data={
+//     name:'Aditya',
+//     age:17,
+//     marks:90,
+//     mob:80809000,
+// }
+// for(let i of Object.keys(stu_data)){
+//     console.log(i,stu_data[i])
+// }
+
+
+// 3.For in loop:
+// const stu_data={
+//     name:'Aditya',
+//     age:17,
+//     marks:90,
+//     mob:80809000,
+// }
+// for(let i in Object.keys(stu_data)){
+//     console.log(Object.keys(stu_data)[i],stu_data[Object.keys(stu_data)[i]])
+// }

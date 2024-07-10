@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 // Structure (struct) is a user-defined data type that allows you
 // to combine data item of different types.
@@ -13,17 +14,31 @@ struct Student{
     float marks;
 };
 
+int show_detail(){
+    struct Student student1={"Ritika",45,85.5};
+    struct Student student2={"Utkarsh",34,80.60};
+
+
+    printf("Student Details :\n");
+    printf("Name :%s\n",student1.name);
+    printf("Roll No :%d\n",student1.roll_no);
+    printf("Marks :%f\n\n",student1.marks);
+
+
+    printf("Student Details :\n");
+    printf("Name :%s\n",student2.name);
+    printf("Roll No :%d\n",student2.roll_no);
+    printf("Marks :%f\n",student2.marks);
+
+
+
+}
 
 
 int main(){
-    struct Student student1;
-
-    strcpy(student1.name,"Randeep");
-    student1.roll_no=101;
-    student1.marks=90;
-
-    printf("Name %s\n",student1.name);
-
-
+    show_detail();
     return 0;
 }
+
+
+

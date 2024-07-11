@@ -10,10 +10,9 @@
 //while a union stores multiple data types of the same size in the
 //same location.
 
-// union template or declaration
-#include <stdio.h>
 
-// union template or declaration
+
+
 union un {
     int roll_no;
     char name[20];

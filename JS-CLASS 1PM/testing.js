@@ -1,41 +1,29 @@
-let ar=['Dreamer','infotech']
-let s=""
-for(let a of ar){
-    s=s+a
-}
+// Write a function to check given char is vowel or consonant.
 
-let all_v=''
-let all_c=''
-let v='aeiou'
-for(let t of s){
-    if (v.includes(t)){
-        all_v=all_v+t
+function check(n) {
+    if (n == 'a' || n == 'e' || n == 'i' || n == 'o' || n == 'u') {
+        console.log("Vowel")
     }
-    else{
-        all_c=all_c+t
+    else {
+        console.log("Consonant")
     }
 
 }
-console.log(all_v)
-console.log(all_c)
+// check('b')
 
 
-// find vowel and consonants
-let ar=['Dreamer','infotech']
+// Write a function to check number pass by user is odd or even
+odd_ar=[]
+even_ar=[] 
+function check(n) {
+    for(let i=1; i<n ; i++){
 
-let newstr=String(ar)
-let str=newstr.split('')
-let v='aeiou'
-let all_vowel=[]
-let all_consonant=[]
-for(let a=0;a<str.length ;a++){
-    if (v.includes(str[a])){
-        all_vowel.push(str[a])
-    }
-    else{
-    
-        all_consonant.push(str[a])
+        if (i % 2 == 0) {
+            console.log(i ,"Even")
         }
+        else {
+            console.log(i ,"Odd")
+        }
+    }
 }
-console.log(all_vowel)
-console.log(all_consonant)
+check(8)

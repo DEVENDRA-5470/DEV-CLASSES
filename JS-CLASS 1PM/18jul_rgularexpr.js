@@ -109,3 +109,39 @@
 // ^n	Matches any string with n at the beginning of it
 // ?=n	Matches any string that is followed by a specific string n
 // ?!n	Matches any string that is not followed by a specific string n
+
+
+
+// ----------------
+// let string='Dreamer infotech @ 123 abc ABC'
+// let p=string.match(/f/g);
+// console.log(p);
+
+
+// let string='Dreamer infotech @ 123 abc ABC'
+// let p=string.match(/INFOTECH/i);
+// console.log(p);
+
+// let string='Dreamer infotech @ 123 abc ABC'
+// let p=string.match(/[abc]/g);
+// console.log(p);
+
+
+// let string='Dreamer infotech @ 123 abc ABC'
+// let p=string.match(/[A-Z]/g);
+// console.log(p);
+
+// let string='Dreamer infotech @ 123 abc ABC'
+// let p=string.match(/[dreamer infotech]/g);
+// console.log(p);
+
+// let string="gr,green,gren,app,aap,apple,oo,tt,ple,reen"
+// let res=string.match(/(green|apple)/g)
+// console.log(res);
+
+
+// let string="That's coot"
+// let res=string.match(/(dev)/g).length
+// let res=string.match(/\s/g).length
+// let res=string.match(/h.t/g)
+// console.log(res);

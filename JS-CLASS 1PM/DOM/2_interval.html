@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #set{
+            height: 100px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.2em;
+            background-color: green;
+            width: 0%;
+        }
+
+        .out{
+            border: 1px solid;
+            width: 100%;
+            background-color: antiquewhite;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- setInterval : Repeatedly excutes a function at certain intervals.   -->
+<div class="out">
+    <div id="set">
+        0
+    </div> 
+
+</div>
+
+
+    <script>
+        let s;
+        let a=0;
+        let set=document.getElementById('set')
+        function counter(){
+            a++;
+            set.innerText=`${a}%`
+            set.style.width=`${a}%`
+            console.log(a)
+            if (a==99){
+                clearInterval(s)
+            }
+        }
+        s=setInterval(counter,100)
+    </script>
+</body>
+</html>

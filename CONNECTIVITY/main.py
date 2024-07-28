@@ -1,4 +1,5 @@
 import sqlite3
+from datetime import datetime
 
 conn=sqlite3.connect("MYCARTsys.db")
 cursor=conn.cursor()
@@ -46,6 +47,24 @@ try:
     );
     """
     cursor.execute(mycart_table)
+    conn.commit()
+except Exception as e:
+    print(e)
+
+
+try:
+    myorder_table=f"""
+    CREATE TABLE IF NOT EXISTS MY_ORDERS(
+    ORD_ID INTEGER PRIMARY KEY AUTOINCREMENT ,
+    CUS_ID INT,
+    PROD_ID INT,
+    TOTAL_PRICE INT,
+    ORDER_DATE VARCHAR(50),
+    FOREIGN KEY (CUS_ID) REFERENCES CUSTOMER(CUS_ID),
+    FOREIGN KEY (PROD_ID) REFERENCES PRODUCTS(PROD_ID)
+    );
+    """
+    cursor.execute(myorder_table)
     conn.commit()
 except Exception as e:
     print(e)
@@ -104,9 +123,50 @@ def add_cart():
     except Exception as e:
         print(e)
 
-add_cart()
+# add_cart()
 
 
+def make_order():
+    try:
+        cus_id=int(input("Enter cus id :"))
+        prod_id=int(input("Enter prod id : "))
+        qty=int(input("Enter no of quantity :"))
+        
+        cursor.execute(f"""
+                       SELECT PROD_PRICE FROM
+                       PRODUCTS WHERE PROD_ID ={prod_id}""")
+        prod_price=cursor.fetchone()
+        print(type(prod_price),prod_price,"-----------------")
+        if not prod_id:
+            print("product nhi hai")
+            return
+        
+        total_price=prod_price[0]*qty
+        order_date=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cursor.execute(f"""
+        INSERT INTO MY_ORDERS (CUS_ID,PROD_ID,TOTAL_PRICE,ORDER_DATE) 
+        VALUES('{cus_id}','{prod_id}','{total_price}','{order_date}')
+    """)
+        conn.commit()
+        # print("Order hogya..✅")  
+    except Exception as e:
+        print(e)
+    
+make_order()
+
+
+def show_cart():
+    query=f"""
+    SELECT MY_CART.CART_ID , MY_CART.QUANTITY , CUSTOMER.CUS_NAME , PRODUCTS.PROD_ID ,
+    PRODUCTS.PROD_NAME , PRODUCTS.PROD_PRICE ,PRODUCTS.PROD_DESC FROM MY_CART
+    JOIN CUSTOMER ON MY_CART.CUS_ID = CUSTOMER.CUS_ID
+    JOIN PRODUCTS ON MY_CART.PROD_ID = PRODUCTS.PROD_ID
+
+    """
+    cursor.execute(query)
+    row=cursor.fetchall()
+    if row:
+        for r in row:
+            print(r)
 # show_cart()
-
 # conn.close()

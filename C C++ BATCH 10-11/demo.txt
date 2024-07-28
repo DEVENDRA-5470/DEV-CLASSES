@@ -1,2 +1,0 @@
-This is an example of writing to a file .
-File handling in c++ is simple!

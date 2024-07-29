@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="get">
+
+    </div>
+
+<button id="btn">Recall Me</button>
+    <!-- <script>
+        let btn1=document.getElementById('btn');
+        function handleclick(){
+            alert("Button clicked")
+            btn1.style.cursor="not-allowed"
+            btn1.disabled=true;
+            btn1.removeEventListener('click',handleclick)
+            console.log("Event Removed..")
+    
+            
+        function addclick(){
+            btn1.style.cursor="pointer"
+            btn1.disabled=false;
+            btn1.style.backgroundColor="green"
+            btn1.addEventListener('click',handleclick)
+            console.log("Event add")
+        }
+        setTimeout(addclick,5000)
+    }
+        btn1.addEventListener('click',handleclick)
+
+    </script> -->
+
+
+    <script>
+        let btn1=document.getElementById('btn');
+        btn1.addEventListener('click',(event)=>{
+            // alert(event.target)
+            console.log(event.target)
+            let d=event.timeStamp
+            console.log(d)
+            let s=new Date(d)
+            console.log(d)
+        })
+    </script>
+</body>
+</html>

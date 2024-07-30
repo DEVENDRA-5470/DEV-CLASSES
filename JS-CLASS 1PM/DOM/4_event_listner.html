@@ -37,14 +37,20 @@
 
     <script>
         let btn1=document.getElementById('btn');
-        btn1.addEventListener('click',(event)=>{
+
+        function demo(e){
             // alert(event.target)
-            console.log(event.target)
-            let d=event.timeStamp
-            console.log(d)
-            let s=new Date(d)
-            console.log(d)
-        })
+            console.log(e.target)
+            let crd=new Date()
+            console.log(crd)
+            
+        }
+        
+
+        btn1.removeEventListener('click',demo)
+        console.log("remove")
+        btn1.addEventListener('click',demo)
+        console.log('added')
     </script>
 </body>
 </html>

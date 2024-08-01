@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Input Trigger</title>
+    <style>
+        #div {
+            display: none;
+        }
+        #btn {
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-align: center;
+            overflow: hidden;
+        }
+        #btn img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        #fileName {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="btn">
+        <img src="path_to_image.jpg" alt="Click to upload" id="uploadIcon"> <!-- Add your image path here -->
+        <span id="fileName"></span>
+    </div>
+    <div id="div">
+        <form action="">
+            <input id="clickme" type="file" style="display: none;" accept="image/*">
+        </form>
+    </div>
+
+    <script>
+        let file = document.getElementById('clickme');
+        let btn = document.getElementById('btn');
+        let uploadIcon = document.getElementById('uploadIcon');
+        let fileNameSpan = document.getElementById('fileName');
+
+        btn.addEventListener('click', function() {
+            file.click();
+        });
+
+        file.addEventListener('input', function() {
+            if (file.files.length > 0) {
+                let selectedFile = file.files[0];
+                console.log('File selected:', selectedFile);
+
+                let reader = new FileReader();
+                reader.onload = function(event) {
+                    uploadIcon.src = event.target.result;
+                    fileNameSpan.style.display = 'block';
+                }
+                reader.readAsDataURL(selectedFile);
+            }
+        });
+    </script>
+</body>
+</html>

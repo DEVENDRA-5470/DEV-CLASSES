@@ -1,47 +1,49 @@
+// alert()
+// CreateElement(): method to create html tags.
 let header=document.createElement('header')
-// appending header into body tag
+header.style.background="teal"
+header.style.color="white"
+header.style.padding="15px"
 document.body.appendChild(header)
 
 let nav=document.createElement('nav')
 nav.style.display="flex"
-nav.style.background="teal"
-nav.style.color="white"
-nav.style.justifyContent="space-around"
-nav.style.alignItems="center"
-nav.style.padding="20px"
 header.appendChild(nav)
 
+// logo div
 let logo_div=document.createElement('div')
-logo_div.className="logo"
+logo_div.className="my_logo"
 nav.appendChild(logo_div)
+let logo_h1=document.createElement("h1")
+logo_div.appendChild(logo_h1)
+logo_h1.innerText="Dreamer"
 
-let h2_for_name=document.createElement('h2')
-h2_for_name.innerText="Dreamer"
-logo_div.appendChild(h2_for_name)
 
+// menu div
 let menu_div=document.createElement('div')
-menu_div.className="menu"
+menu_div.className="my_menu"
 nav.appendChild(menu_div)
-
 let ul=document.createElement('ul')
 menu_div.appendChild(ul)
+// home about service contact blog
 
-let lis=[]
-for (let i=1 ; i<=5 ; i++){
+let my_menus=[
+    {name:"Home",href:"https/dreamerifn.com"},
+    {name:"About",href:"https/dreamerifn.com"},
+    {name:"About",href:"https/dreamerifn.com"},
+    {name:"About",href:"https/dreamerifn.com"},
+    {name:"About",href:"https/dreamerifn.com"},
+    {name:"About",href:"https/dreamerifn.com"},
+]
+
+my_menus.forEach((item,i) => {
     let li=document.createElement('li')
-    li.style.listStyle="none"
-    li.style.display="inline"
-    li.style.margin="10px"
-    lis.push(li)
+    let a=document.createElement("a")
+    a.innerText=item.name
+    a.style.textDecoration="none"
+    a.style.color="white"
+    a.setAttribute('href',item.href)
+    li.appendChild(a)
+    ul.appendChild(li)
 
-}
-
-for (let i=0 ; i<lis.length ; i++){
-    
-    if (i==0){lis[i].innerHTML=`<a href="">Home</a>`}
-    if (i==1){lis[i].innerHTML=`<a href="">About</a>`}
-    if (i==2){lis[i].innerHTML=`<a href="">Service</a>`}
-    if (i==3){lis[i].innerHTML=`<a href="">Contact</a>`}
-    if (i==4){lis[i].innerHTML=`<a href="">Blogs</a>`}
-    ul.appendChild(lis[i])
-}
+})

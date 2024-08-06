@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    tr{
+        text-align: center;
+    }
+</style>
+<body>
+    <table border="1" id="table"></table>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let table=document.getElementById('table')
+        table.style.width="100%"
+        let first_row=table.insertRow()
+        first_row.insertCell(0).innerText="Student Name"
+        first_row.insertCell(1).innerText="Math"
+        first_row.insertCell(2).innerText="Science"
+        first_row.insertCell(3).innerText="English"
+        first_row.insertCell(4).innerText="Total"
+        
+
+        function add_student_data(){
+        let second_row=table.insertRow(1)
+        second_row.insertCell(0).innerText="Aditya"
+        second_row.insertCell(1).innerText=70
+        second_row.insertCell(2).innerText=90
+        second_row.insertCell(3).innerText=80
+    }
+    add_student_data()
+ 
+        
+    </script>
+</body>
+</html>

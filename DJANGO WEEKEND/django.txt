@@ -1,0 +1,12 @@
+what is framework.
+Frontend framework : UI/UX (reactjs,angular,bootstarp,tailwind)
+Backend framework : providing brain to your web app.(laravel,Django,flask,springboot)
+
+Django backend web framework of python. 
+1.Included library(battries)
+2.Used for rapid web app development.
+3.Best framework for managing heavy database.
+
+INSTALLATION of Django
+1.Globally INSTALLATION
+2.Environment INSTALLATION

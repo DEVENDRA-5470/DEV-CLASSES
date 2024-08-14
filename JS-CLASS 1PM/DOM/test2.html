@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let entry=[
+            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
+            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
+            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
+            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
+        ]
+
+        for(let i=0 ; i<entry.length ;i++){
+            localStorage.setItem(`Data ${i}`,JSON.stringify(entry))
+
+        }
+
+
+        const json = '{"id":"124","name":"shivani","email":"ysdevn@gmail.com"}';
+        console.log(json)
+        const obj = JSON.parse(json);
+        
+        console.log(obj)
+        let str=JSON.stringify(json)
+        console.log(str)
+
+
+
+    </script>
+</body>
+</html>

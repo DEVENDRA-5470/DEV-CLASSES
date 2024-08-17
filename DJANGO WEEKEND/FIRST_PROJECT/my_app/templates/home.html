@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <center> 
-        <h1> HOME DREAMER INFOTECH </h1>
-    </center>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<img width="200px" src="{% static 'images/pic1.jpg' %}" alt="Not found">
+
+{% comment %} {{data}} {% endcomment %}
+<br>
+{{marks}}
+<br>
+{% for k,v in data.items %}
+<br>
+{{k}}:{{v}}
+
+{% endfor %}
+
+{% endblock content %}

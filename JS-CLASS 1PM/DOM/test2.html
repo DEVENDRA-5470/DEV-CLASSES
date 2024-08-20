@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" c'ontent="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -11,27 +11,27 @@
 
 
     <script>
-        let entry=[
-            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
-            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
-            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
-            {id:"124",name:"shivani",email:"ysdevn@gmail.com"},
-        ]
-
-        for(let i=0 ; i<entry.length ;i++){
-            localStorage.setItem(`Data ${i}`,JSON.stringify(entry))
-
+        let entry=
+        {
+            id:"2",
+            name:"babita",
+            email:"ysdevn@gmail.com"
         }
+    
+        localStorage.setItem(`Data_${entry.id}`,JSON.stringify(entry))
 
 
-        const json = '{"id":"124","name":"shivani","email":"ysdevn@gmail.com"}';
-        console.log(json)
-        const obj = JSON.parse(json);
+
+        const json = JSON.parse(localStorage.getItem('Data_2'));
+        console.log(json.name)
         
-        console.log(obj)
-        let str=JSON.stringify(json)
-        console.log(str)
 
+        let row=`
+        ${json.id}
+        ${json.name}
+        
+        `
+        document.write(row)
 
 
     </script>

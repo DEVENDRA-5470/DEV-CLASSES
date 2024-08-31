@@ -17,4 +17,49 @@
 // You can use .then() to do something when the promise fullfilled.
 // and .catch() to handle errors if the promise rejected.
 
+// let my_promise= new Promise( (resolve,reject)=>{
+//     let pizza_ready=0;
 
+//     if(pizza_ready){
+
+//         resolve("Your Pizza is ready to serve 🍕")
+//     }
+
+//     else{
+//         reject("Sorry we are out of Pizza stock ❌")
+//     }
+// } )
+
+// my_promise
+// .then((message)=>{console.log(message)})
+// .catch((message)=>{console.log(message)})
+
+
+function order_pizza(){
+    return new Promise((resolve,reject)=>{
+        let pizza_ready=0;
+
+        if (pizza_ready){
+            resolve("Your Pizza is ready to serve 🍕")
+        }
+
+        else{
+            reject("Sorry we are out of Pizza stock ❌") 
+        }
+
+    })
+
+}
+
+async function serve_pizza(){
+    try{
+        // Await the promise and handle the resolve value.
+        let status= await order_pizza();
+        console.log(status)
+    }
+    catch (error){
+        console.log(error)
+    }
+}
+
+serve_pizza()

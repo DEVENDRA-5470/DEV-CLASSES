@@ -40,12 +40,12 @@
 // console.log(my_arr)
 
 // 5.Traversing.
-let my_arr=[45,89,90,78,2,3,5,63,2]
-for(let i=0 ;i<my_arr.length ; i++){
-    if(my_arr[i]%2==0){
-        console.log("EVEN:",my_arr[i])
-    }
-}
+// let my_arr=[45,89,90,78,2,3,5,63,2]
+// for(let i=0 ;i<my_arr.length ; i++){
+//     if(my_arr[i]%2==0){
+//         console.log("EVEN:",my_arr[i])
+//     }
+// }
 
 // let my_arr=[45,89,90]
 // for (i in my_arr){
@@ -70,3 +70,29 @@ for(let i=0 ;i<my_arr.length ; i++){
 //     console.log(i)
 //     i++;
 // }while(i<my_arr.length)
+
+// let my_marks=[12,22,33,23,10]
+// let first=my_marks[0]
+// let last=my_marks.length-1
+// my_marks[0]=my_marks[last]
+// my_marks[last]=first
+// console.log(my_marks)
+
+// In-builted method
+// push()
+// let my_arr=[1,2,4]
+// my_arr.push(34)
+// my_arr.push(4)
+// console.log(my_arr)
+
+// let my_arr=[]
+// for(let e=0 ; e<=10 ;e++){
+//     my_arr.push(e)
+// }
+// console.log(my_arr)
+
+
+// pop()
+// let my_arr=[2,3,4,5,9]
+// my_arr.pop()
+// console.log(my_arr)

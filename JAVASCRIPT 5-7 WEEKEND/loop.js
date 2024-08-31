@@ -16,7 +16,24 @@
 
 
 // Write a programme to print the table of a number given by user.
-let user=3
-for(let i=1 ; i<=10 ; i++){
-    console.log(`${user} x ${i} = ${user*i}`)
+// let user=3
+// for(let i=1 ; i<=10 ; i++){
+//     console.log(`${user} x ${i} = ${user*i}`)
+// }
+
+
+
+// let data="DREAMER"
+// for(let i=0 ; i<data.length ;i++){
+//     console.log(data[i],i)
+// }
+
+let num=""
+for(let i=1 ; i<=10 ;i++){
+    num=i+"-"+num
+
+
 }
+console.log(num)
+
+// console.log('1'+'1')

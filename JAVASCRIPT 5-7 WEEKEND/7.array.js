@@ -96,3 +96,52 @@
 // let my_arr=[2,3,4,5,9]
 // my_arr.pop()
 // console.log(my_arr)
+
+// unshift 
+// let my_arr=[2,3,4,5,9]
+// my_arr.unshift(34)
+// console.log(my_arr)
+
+
+// shift 
+// let my_arr=[2,3,4,5,9]
+// my_arr.shift(34)
+// console.log(my_arr)
+
+
+// reverse
+// let my_arr=[2,3,4,5,9]
+// my_arr.reverse()
+// console.log(my_arr)
+
+// concat
+// let first_arr=[2,3,4,5,9]
+// let last_arr=['dev','stayam','khwaish']
+// let one=first_arr.concat(last_arr)
+// console.log(one)
+
+// include()
+// let first_arr=[2,3,4,5,9]
+// let res=first_arr.includes(20)
+// console.log(res)
+
+// join()
+// let first_arr=['aman','shivani','khwaish','harshita']
+// let res=first_arr.join()
+// let res=first_arr.join(' ')
+// let res=first_arr.join('-')
+// console.log(res)
+
+// indexOf()
+// let first_arr=['aman','shivani','khwaish','harshita']
+// let res=first_arr.indexOf('shivani')
+// console.log(res)
+
+let first_arr=['aman','shivani','khwaish','harshita']
+for (let i=0; i<first_arr.length  ; i++){
+    let size=first_arr[i].length
+    console.log( first_arr[i] ,'=' ,size)
+}
+
+
+

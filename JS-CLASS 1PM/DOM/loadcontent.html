@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function load_Data() {
+            fetch('content.txt')
+            .then(res=>
+            {
+                return res.text()
+            }
+            )
+            .then(data=>
+            {
+                document.write(data)
+            }
+            )
+
+        }
+        load_Data()
+    </script>
+</body>
+</html>

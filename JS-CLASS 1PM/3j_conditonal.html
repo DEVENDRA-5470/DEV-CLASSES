@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h2 id="get"></h2></center>
+</body>
+
+
+<script>
+    let data=Number(prompt("Enter Your Number : "))
+    if(data%2==0){
+        let res=document.getElementById('get');
+        res.innerHTML=`<h1 style="color:red"> Even : ${data} </h1>`
+        
+    }
+    else{
+        let res=document.getElementById('get');
+        res.innerHTML=`<h1 style="color:green"> Odd : ${data} </h1>`
+    }
+
+</script>
+</html>

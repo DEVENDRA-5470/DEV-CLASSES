@@ -1,0 +1,8 @@
+1.BMI CALCULATOR
+2.Color Changer
+3.Basic Calculator
+4.Random Color genrator
+5.Temperature converter
+6.https://wordcounter.net/
+7.Demo
+https://coolors.co/palettes/trending

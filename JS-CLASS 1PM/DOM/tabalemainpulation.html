@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    tr{
+        text-align: center;
+    }
+    .entry_box{
+        display: inline-flex;
+        margin-top: 350px;
+        align-items: center;
+    }
+    .entry_box div{
+        margin-left: 5px;
+    }
+    .entry_box button{
+        margin-top: 50px;
+    }
+    .fail{
+        background-color: red;
+        color: aliceblue;
+    }
+    .pass{
+        background-color: green;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <table border="1" id="table"></table>
+
+
+    <div class="entry_box">   
+        <div>
+            <p>Student Name </p>
+            <input type="text" placeholder="Student name " id="stu_name">
+        </div>
+        <div>
+            <p>Math </p>
+            <input type="number" placeholder="Math " id="math">
+        </div>
+        <div>
+            <p>Science </p>
+            <input type="number" placeholder="Science" id="science">
+        </div>
+        <div>
+            <p>English</p>
+            <input type="number" placeholder="English" id="english">
+        </div>
+        <div>
+           <button onclick="add_student()">ADD STUDENT</button>
+           <button onclick="delete_student()"> DELETE STUDENT</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        let table=document.getElementById('table')
+        table.style.width="100%"
+        let first_row=table.insertRow()
+        first_row.insertCell(0).innerText="STUDENT"
+        first_row.insertCell(1).innerText="MATH"
+        first_row.insertCell(2).innerText="SCIENCE"
+        first_row.insertCell(3).innerText="ENGLISH"
+        first_row.insertCell(4).innerText="TOTAL"
+        first_row.insertCell(5).innerText="RESULT"
+        
+
+
+
+
+    // ADDING STUDENT
+    function add_student(){
+        let stu_name=document.getElementById('stu_name').value
+        let math=document.getElementById('math').value
+        let science=document.getElementById('science').value
+        let english=document.getElementById('english').value
+        if (stu_name){
+            let second_row=table.insertRow()
+
+            second_row.insertCell(0).innerText=stu_name
+            second_row.insertCell(1).innerText=math
+            second_row.insertCell(2).innerText=science
+            second_row.insertCell(3).innerText=english
+            let total=second_row.insertCell(4).innerText=parseInt(science)+parseInt(math)+parseInt(english)
+            console.log(total)
+            if (total>60){
+                let g=second_row.insertCell(5).innerHTML=`<span class="pass">PASS</span>`
+                
+            }
+            else{
+                second_row.insertCell(5).innerHTML=`<span class="fail">FAIL</span>`
+                
+                
+            }
+            stu_name=document.getElementById('stu_name').value=""
+            math=document.getElementById('math').value=""
+            science=document.getElementById('science').value=""
+            english=document.getElementById('english').value=""
+        }
+        else{
+            alert("Please inset data..")
+        }
+        
+    }
+
+    function delete_student(){
+        let table=document.getElementById('table')
+        let name=document.getElementById('stu_name').value
+        let rows=table.rows.length
+        let nhi_hai=false
+        for (let i=0; i<rows ; i++){
+            let row=table.rows[i]
+            console.log(row)
+
+            if (row.cells[0].innerHTML===name){
+                table.deleteRow(i)
+            }
+            name=document.getElementById('stu_name').value=""
+
+        }
+
+
+    }
+
+    </script>
+</body>
+</html>

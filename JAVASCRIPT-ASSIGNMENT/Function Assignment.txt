@@ -1,0 +1,83 @@
+### Assignment Functions (JavaScript)
+
+ Problem1:
+Write a function to count the total odd and total even numbers by taking the start point and end point as arguments.
+
+ Problem2:
+Write a function to filter out the greatest string from a given array `['python', 'javascript', 'arguments', 'java']`.
+
+ Problem3:
+Write a function to filter out the smallest string from a given array `['python', 'javascript', 'arguments', 'java']`.
+
+ Problem4:
+Write a function to find all possible string data including characters given as an argument by input, from the array `['find', 'all', 'possible', 'string', 'data', 'including', 'character']`.
+
+ Problem5:
+Write a function to find the duplicate strings from a given array and an array provided by the user as arguments `['apple', 'mango', 'apple', 'pineapple', 'carrot', 'mango', 'banana']`.
+
+ Problem6:
+Write a function to count all characters from the string `'find all possible string data including character'` and a string passed by the user as arguments.
+
+ Problem7:
+Write a function to find all odd and even numbers by taking the start point and end point as arguments using array comprehension.
+
+ Problem8:
+Write a function to filter out all vowels and consonants from a string given by the user using the filter function.
+
+ Problem9:
+Write a function to reverse the array `[2, 3, 4, 5, 6, 7, 9, 23, 90]` and an array passed as arguments.
+
+ Problem10:
+Write a function to convert the array `[1, 2, 3, 4, 4, 5, 6, 7, 8, 8]` to `['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']`.
+
+ Problem11:
+Given the array: `[[1, 2, 3, 4, 5], ["python", 'java', 'javascript', 'mango'], [2, 4, 6, 8, 10], [30, 33, 54, 23, 34, 67, 89]]`
+Output array:
+```
+[1, 2, 3, 4, 5]
+["python", 'java', 'javascript', 'mango']
+[2, 4, 6, 8, 10]
+[30, 33, 54, 23, 34, 67, 89]
+```
+
+ Problem12:
+Menu-Driven Calculator Program:
+- Create four functions `add`, `sub`, `mul`, `div` to perform basic arithmetic operations.
+- Create a menu function to show menu for user inputs.
+- Perform the operation on user's input and return the results.
+
+ Problem13:
+Create a function to search visiting places in the visiting place searching system by taking user input.
+
+ Problem14:
+Write a JavaScript function that accepts a string and counts the number of uppercase and lowercase letters.
+- Sample String: 'The quick Brow Fox'
+- Expected Output:
+  - No. of Uppercase characters: 3
+  - No. of Lowercase characters: 12
+
+ Problem15:
+Write a JavaScript function that takes an array and returns a new array with distinct elements from the first array.
+- Sample Array: `[1, 2, 3, 3, 3, 3, 4, 5]`
+- Unique Array: `[1, 2, 3, 4, 5]`
+
+ Problem16:
+Write a JavaScript function that takes a number as a parameter and checks whether the number is prime or not.
+
+ Problem17:
+Write a function that inputs a number and prints the multiplication table of that number.
+
+ Problem18:
+Write a function `prodDigits()` that inputs a number and returns the product of digits of that number.
+
+ Problem19:
+Write a function that takes a two-word string and returns `true` if both words begin with the same letter.
+
+ Problem20:
+Given two integers, return `true` if the sum of the integers is 20 or if one of the integers is 20. If not, return `false`.
+
+ Problem21:
+Write a function that capitalizes the first and fourth letters of a name.
+
+ Problem22:
+Given a string, return a string where for every character in the original there are three characters.

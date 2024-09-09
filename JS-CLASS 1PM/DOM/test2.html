@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" c'ontent="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let entry=
+        {
+            id:"2",
+            name:"babita",
+            email:"ysdevn@gmail.com"
+        }
+    
+        localStorage.setItem(`Data_${entry.id}`,JSON.stringify(entry))
+
+
+
+        const json = JSON.parse(localStorage.getItem('Data_2'));
+        console.log(json.name)
+        
+
+        let row=`
+        ${json.id}
+        ${json.name}
+        
+        `
+        document.write(row)
+
+
+    </script>
+</body>
+</html>

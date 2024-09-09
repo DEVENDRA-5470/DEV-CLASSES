@@ -1,0 +1,32 @@
+### Assignment: Using `map` Function in javascript
+
+
+ Question 1: Square All Elements
+Given a array of integers, use the `map` function to create a new array that contains the square of each number.
+
+ Question 2: Convert to Upper Case
+Given a array of strings, use the `map` function to create a new array where each string is converted to upper case.
+
+ Question 3: Add 10 to Each Element
+Given a array of integers, use the `map` function to create a new array where 10 is added to each element.
+
+ Question 4: Length of Each String
+Given a array of strings, use the `map` function to create a new array containing the lengths of each string.
+
+ Question 5: Boolean Check for Even Numbers
+Given a array of integers, use the `map` function to create a new array where each element is `True` if the number is even, and `False` if it is odd.
+
+ Question 6: Convert to Floats
+Given a array of integers, use the `map` function to create a new array where each integer is converted to a float.
+
+ Question 7: Extract First Character
+Given a array of strings, use the `map` function to create a new array where each element is the first character of the corresponding string.
+
+ Question 8: Multiply Corresponding Elements
+Given two arrays of numbers, use the `map` function to create a new array where each element is the product of the corresponding elements of the two arrays.
+
+ Question 9: Remove Whitespace
+Given a array of strings, use the `map` function to create a new array where all leading and trailing whitespace is removed from each string.
+
+ Question 10: Find Square Roots
+Given a array of numbers, use the `map` function to create a new array where each element is the square root of the corresponding element in the input array.

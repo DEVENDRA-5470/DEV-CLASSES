@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+</style>
+
+<body>
+    <section>
+        <h1>My first page</h1>
+        <div>
+            <p>0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+            </p>
+
+            <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <span>Dreamer</span>
+            <span>Infotech</span>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+         </div>
+
+    </section>
+
+    <button onmouseover="recall_me()">Recall Me</button>
+
+
+
+    <script>
+        function recall_me(){
+
+        let section=document.getElementsByTagName('p')
+        //let section=document.querySelector('p')
+        //let section=document.querySelectorAll('p')
+        console.log(section)
+        for(i of section){
+            i.innerHTML="HELLO HOW ARE YOUR LETS PLAY A TDM MATCH"
+            
+            
+        }
+        // section[1].innerHTML="HELLO HOW ARE YOUR LETS PLAY A RANKED MATCH"
+    }
+
+    </script>
+</body>
+
+</html>

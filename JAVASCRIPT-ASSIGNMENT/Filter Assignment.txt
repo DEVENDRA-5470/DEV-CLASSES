@@ -1,0 +1,32 @@
+ Assignment: Using `filter` Function in javascript
+
+
+ Question 1: Filter Even Numbers
+Given a list of integers, use the `filter` function to create a new list that contains only the even numbers.
+
+ Question 2: Filter Strings with Length Greater Than 3
+Given a list of strings, use the `filter` function to create a new list that contains only the strings with length greater than 3.
+
+ Question 3: Filter Positive Numbers
+Given a list of integers, use the `filter` function to create a new list that contains only the positive numbers.
+
+ Question 4: Filter Strings Containing 'a'
+Given a list of strings, use the `filter` function to create a new list that contains only the strings that have the letter 'a' in them.
+
+ Question 5: Filter Numbers Greater Than 10
+Given a list of integers, use the `filter` function to create a new list that contains only the numbers greater than 10.
+
+ Question 6: Filter Non-Empty Strings
+Given a list of strings, use the `filter` function to create a new list that contains only the non-empty strings.
+
+ Question 7: Filter Odd Numbers
+Given a list of integers, use the `filter` function to create a new list that contains only the odd numbers.
+
+ Question 8: Filter Strings Starting with 'A'
+Given a list of strings, use the `filter` function to create a new list that contains only the strings that start with the letter 'A'.
+
+ Question 9: Filter Multiples of 5
+Given a list of integers, use the `filter` function to create a new list that contains only the multiples of 5.
+
+ Question 10: Filter Strings with Uppercase Letters
+Given a list of strings, use the `filter` function to create a new list that contains only the strings that have uppercase letters.

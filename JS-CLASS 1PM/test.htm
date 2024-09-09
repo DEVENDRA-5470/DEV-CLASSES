@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, at.</p>
+    <p>2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, at.</p>
+    <p>3Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, at.</p>
+    <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, at.</p>
+
+
+    <script>
+        const p = document.querySelectorAll('p');
+        let s=p.length;
+        for(let i=0;i<s;i++){
+        if (i%2==0){
+            p[i].style.color='red';
+            p[i].innerHTML="hellow how are you"
+            p[i].classList="same"
+        }
+        else{
+            p[i].style.color='blue';
+            p[i].innerHTML="I sufferring with disease javascipt"
+            p[i].id="newDFDSKJJ"
+        }
+        }
+    </script>
+</body>
+
+
+</html>

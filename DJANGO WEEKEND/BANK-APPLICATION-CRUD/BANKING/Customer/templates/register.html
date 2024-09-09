@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+{% comment %} {{form}} {% endcomment %}
+
+
+<div class="flex justify-center mt-5">
+<form method="post" id="main" class=" max-w-sm ml-1 border p-5  rounded-lg w-1/2" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-5 ">
+        <label for="customer-ac-no" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Username </label>
+        {{form.username}}
+    </div>
+    <div class="mb-5 ">
+        <label for="customer-name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Email </label>
+        {{form.email}}
+    </div>
+
+    <div class="mb-5 ">
+        <label for="customer-name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">First Name </label>
+        {{form.first_name}}
+    </div>
+
+    <div class="mb-5 ">
+        <label for="customer-name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Last name </label>
+        {{form.last_name}}
+    </div>
+
+    <div class="mb-5 ">
+        <label for="customer-name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Password </label>
+        {{form.password1}}
+    </div>
+
+    <div class="mb-5 ">
+        <label for="customer-name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Confirm Password </label>
+        {{form.password2}}
+    </div>
+ 
+   
+ 
+  
+
+
+    <div class="flex gap-2 justify-between">
+      <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
+  </div>
+  
+</form>
+</div>
+{% endblock content %}

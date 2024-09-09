@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+  #deposite{
+    display: none;
+  }
+  #withdraw{
+    display: none;
+  }
+  #main{
+    display: none;
+  }
+
+</style>
+<body>
+  <div class="bg-blue-600 text-white  p-5 flex justify-between" >
+    <b><h1 class="text-xl">Bank Application</h1></b>
+    <button  onclick="main()" class="bg-orange-600 px-2 py-2 rounded">Create Account</button>
+  </div>
+
+  <div class="flex  w-full p-1">
+    <!-- main form --> 
+    <form id="main" class="max-w-sm ml-1 border p-5  rounded-lg w-1/2" onsubmit="save_me(event)">
+      <div class="mb-5 ">
+          <label for="customer-ac-no" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Ac No.</label>
+          <input type="text" id="customer-ac-no" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Account Number (Optional)"/>
+      </div>
+      <div class="mb-5 ">
+          <label for="customer-name" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Name</label>
+          <input type="text" id="customer-name" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="John Doe" required />
+      </div>
+      <div class="mb-5">
+          <label for="customer-mobile" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Mobile</label>
+          <input type="tel" id="customer-mobile" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="123-456-7890" required />
+      </div>
+      <div class="mb-5">
+          <label for="customer-email" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Email</label>
+          <input type="email" id="customer-email" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@example.com" required />
+      </div>
+      <div class="mb-5">
+          <label for="customer-balance" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Balance</label>
+          <input value="0" type="text" id="customer-balance" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Balance" required />
+      </div>
+
+      <div class="flex gap-2 justify-between">
+        <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create Account</button>
+        <!-- <button onclick="get_data()" type="button" class="w-1/2 text-white bg-blue-700 focus:ring-1 hover:bg-blue-800  focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get All Accounts</button> -->
+    </div>
+    
+  </form>
+
+<!-- Deposite Form-->
+<form id="deposite" class=" max-w-sm ml-1 border p-5  rounded-lg w-1/2" onsubmit="save_me(event)">
+  <div class="mb-5 ">
+      <label for="customer-ac-no" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Ac No.</label>
+      <input type="text" id="customer-ac-no" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Account Number (required) " required/>
+  </div>
+
+  <div class="mb-5">
+      <label for="customer-balance" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Withdraw Balance</label>
+      <input value="0" type="text" id="customer-balance" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Balance" required />
+  </div>
+
+  <div class="flex gap-2 justify-between">
+    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Deposite Amount</button>
+    <!-- <button onclick="get_data()" type="button" class="w-1/2 text-white bg-blue-700 focus:ring-1 hover:bg-blue-800  focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get All Accounts</button> -->
+  </div>  
+</form>
+
+
+<!-- Withdraw Form -->
+<form id="withdraw" class=" max-w-sm ml-1 border p-5  rounded-lg w-1/2" onsubmit="save_me(event)">
+  <div class="mb-5 ">
+      <label for="customer-ac-no" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Customer Ac No.</label>
+      <input type="text" id="customer-ac-no" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Account Number (required) " required/>
+  </div>
+
+  <div class="mb-5">
+      <label for="customer-balance" class="block mb-2 text-sm font-medium text-black-900 dark:text-black">Deposite Balance</label>
+      <input value="0" type="text" id="customer-balance" class="shadow-sm bg-black-50 border border-black-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Balance" required />
+  </div>
+
+  <div class="flex gap-2 justify-between">
+    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Withdraw Amount</button>
+    <!-- <button onclick="get_data()" type="button" class="w-1/2 text-white bg-blue-700 focus:ring-1 hover:bg-blue-800  focus:outline-none  font-medium rounded-lg text-sm px-1 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get All Accounts</button> -->
+</div>
+
+</form>
+
+
+
+<!-- --------------- table ------------------------ -->
+
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-full ml-2" style="max-height: 500px; overflow-y: auto; ">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs bg-blue-600 uppercase bg-gray-50 dark:bg-blue-700 dark:text-white text-center"style="position: sticky; top: 0;">
+            <tr >
+                <th scope="col" class="px-6 py-3">
+                    Customer Ac
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Customer Name 
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Mobile
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Email
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Balance
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Action
+                </th>
+            </tr>
+        </thead>
+        <tbody id="list" class="text-center">
+            
+
+           
+
+        </tbody>
+    </table>
+  </div>
+
+
+  </div>
+
+    
+
+    
+
+
+
+
+    <script src="localstorage.js"></script>
+</body>
+</html>

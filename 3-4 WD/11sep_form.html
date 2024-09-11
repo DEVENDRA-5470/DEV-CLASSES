@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .set{
+        width: 30%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 19px;
+        line-height: 0.5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    input{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 5px;
+        width: 100%;
+        outline: none;
+        border: 1px solid white;
+        background-color: rgba(128, 128, 128, 0.183);
+        border-radius: 5px;
+        color: aliceblue;
+        font-size: 19px;
+    }
+    input[type="checkbox"]{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        width: 20px;
+        height: 20px;
+
+    }
+    input[type="radio"]{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        width: 20px;
+        height: 20px;
+
+    }
+    input[type="submit"]{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        width: 50%;
+        background-color: green;
+
+    }
+    input[type="reset"]{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        width: 50%;
+        background-color:orange;
+
+
+    }
+    .form{
+        padding: 30px;
+        background-color: rgb(54, 51, 48);
+        color: white;
+
+        
+    }
+</style>
+<body>
+    <fieldset class="set">
+
+
+            <legend>
+                <marquee behavior="smooth" direction="right"><h1>Student Registration Form</h1>
+                </marquee>
+            </legend>
+        
+        <div class="form">
+            <form action="">
+
+                <div>
+                    <p> <label for="same">Student Name </label></p>
+                    <input id="same" type="text" placeholder="Enter you name"  required value="Prince">
+                </div>
+                <div>
+                    <p> <label for="same">Student Age </label></p>
+                    <input id="same" type="number" placeholder="Enter you age">
+                </div>
+                <div>
+                    <p> <label for="same">Student Email </label></p>
+                    <input id="same" type="email" placeholder="Enter you Email Id" required>
+                </div>
+                <div>
+                    <p> <label for="same">Student Mobile </label></p>
+                    <input id="same" type="number" placeholder="Enter Mobile No.">
+                </div>
+                <div>
+                    <p> <label for="same">Student Dob </label></p>
+                    <input id="same" type="date" >
+                </div>
+                <div>
+                    <p> <label for="same">Student Document </label></p>
+                    <input id="same" type="file" >
+                </div>
+
+                <div>
+                    <p> <label for="same">Student Password </label></p>
+                    <input id="same" type="password" placeholder="Password" required>
+                </div>
+
+                <div>
+                    <p> <label for="same">Student Subjects </label></p>
+                    English <input type="checkbox">
+                    Mathmatics <input type="checkbox">
+                    Science <input type="checkbox">
+                </div>
+
+                <div>
+                    <P><label for="">Student Gender</label></P>
+                    Male:<input type="radio" name="gender">
+                    Female:<input type="radio" name="gender">
+                    Other:<input type="radio" name="gender">
+                </div>
+
+                <div>
+                    <br>
+                   <input type="submit" value="Register">
+                   <br>
+                   <br>
+                   <input type="reset" value="Reset">
+                </div>
+
+              
+
+            </form>
+        </div>
+    </fieldset>
+</body>
+</html>

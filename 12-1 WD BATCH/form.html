@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    fieldset{
+        width: 40%;
+        /* padding-top: 32px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom:200px ; */
+        padding: 20px;
+        /* margin-left:450px ;
+        margin-top: 30px; */
+        margin: auto;
+        margin-top: 100px;
+    }
+   p{
+    line-height: 0px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-weight:300; */
+    /* text-align: center; */
+   }
+   input{
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    border: 1px solid teal;
+   }
+</style>
+</head>
+<body>
+    <!-- units px cm % mm rem em vh  1rem=16px 1em=16px-->
+    <fieldset>
+        <legend>
+            <marquee behavior="" direction="right">
+                <h1>Student Registration Form</h1>
+            </marquee>
+        </legend>
+        <form action="">
+            <div>
+                <p><label for="same">Student Name</label></p>
+                <input id="same" type="text" placeholder="Student name">
+            </div>
+            <div>
+                <p><label for="same">Student Mobile</label></p>
+                <input id="same" type="number" placeholder="Student Mobile">
+            </div>
+            <div>
+                <p><label for="same">Student Dob</label></p>
+                <input id="same" type="date">
+            </div>
+            <div>
+                <p><label for="same">Student Password</label></p>
+                <input id="same" type="password" placeholder="Student Password">
+            </div>
+            <div>
+                <p><label for="same">Student Document</label></p>
+                <input id="same" type="file">
+            </div>
+            <div>
+                <p><label for="same">Student Subjects</label></p>
+               Math:<input id="same" type="checkbox">
+               Math:<input id="same" type="checkbox">
+               Math:<input id="same" type="checkbox">
+            </div>
+            <div>
+                <p><label for="same">Student Gender</label></p>
+                Male:<input type="radio" name="gender">
+                Female:<input type="radio" name="gender">
+               
+            </div>
+            <div>
+                <p><label for="same">Student Address</label></p>
+                <textarea style="resize: none;" cols="75" rows="10" name="" id=""></textarea>
+               
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Register Now">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

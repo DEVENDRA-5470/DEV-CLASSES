@@ -137,11 +137,62 @@
 // let res=first_arr.indexOf('shivani')
 // console.log(res)
 
-let first_arr=['aman','shivani','khwaish','harshita']
-for (let i=0; i<first_arr.length  ; i++){
-    let size=first_arr[i].length
-    console.log( first_arr[i] ,'=' ,size)
-}
+// let first_arr=['aman','shivani','khwaish','harshita']
+// for (let i=0; i<first_arr.length  ; i++){
+//     let size=first_arr[i].length
+//     console.log( first_arr[i] ,'=' ,size)
+// }
 
 
 
+// Array destructuring.
+// Array destructuring allows you to unpacke value of array into different variable.
+
+//1.copy
+// let my_arr=[2,3,4,5,67,90]
+// console.log(my_arr)
+// let new_arr=[...my_arr]
+// console.log(new_arr)
+
+// // 2 Basic strucutring
+// let my_arr=[2,3,4,5,67,90]
+// let [a,b,c,d]=my_arr;
+// console.log(a,b,c,d)
+
+// 3 skipping elements
+// let my_arr=[2,3,4,5,67,90]
+// let [first,,thired,,fifth]=my_arr;
+// console.log(first,thired,fifth)
+
+// 4.Rest operator(...)
+// let my_arr=[2,3,4,5,67,90]
+// let [first,...rest]=my_arr;
+// console.log(first,rest)
+
+// 2 Default values
+// let my_arr=[2]
+// let [a,b=30,c=90]=my_arr;
+// console.log(a,b,c)
+
+
+// Array structuring.--------------------------------
+// Array structuring refers to the process of creating arrays in a sturctured way.
+
+// // 1. Basic structuring...
+// let [a,b,c]=[1,2,4]
+// console.log(a,b,c)
+
+// 2. nested array
+// let [a,[b,c]]=[1,[2,4]]
+// console.log(a,b,c)
+
+// 3. Swapping
+// let a=1,b=2;
+// [a,b]=[b,a]
+// console.log(a)
+// console.log(b)
+
+// 4. Ignoring values
+
+// let [a, ,b]=[1,2,3]
+// console.log(a,b)

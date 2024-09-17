@@ -2,10 +2,39 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
 from PIL import Image,ImageTk
+import mysql.connector
 window=Tk()
 window.title('STUDENT REGISTRATION')
 window.resizable(0,0)
 window.geometry('600x700')
+
+def connect_mysql():
+    con=mysql.connector.connect(host="localhost",user="root",password="root")
+    return con
+
+def create_db_and_table():
+    conn=connect_mysql()
+    cur=conn.cursor()
+
+    cur.execute("CREATE DATABASE IF NOT EXISTS STUDENT_DATA")
+    # messagebox.showinfo('Status','Database create or exists')
+    cur.execute("USE STUDENT_DATA")
+
+    table=f"""
+        CREATE TABLE IF NOT EXISTS STUDENT(
+        STU_ID INT PRIMARY_KEY AUTO_INCREMENT,
+        STU_NAME VARCHAR(50),
+        STU_CLASS VARCHAR(10),
+        STU_ROLL VARCHAR(10),
+        STU_GENDER VARCHAR(10),
+        STU_MOB TEXT,
+        STU_EMAIL TEXT,
+        STU_IMG TEXT,
+        STU_DOC TEXT
+
+        );
+    """
+
 
 # upload image
 def upload_image():
@@ -20,7 +49,7 @@ def upload_image():
         stu_image_lable.image=img
 # upload document
 def upload_docs():
-    file_path=filedialog.askopenfilename(filetypes=[('All files','.')])
+    file_path=filedialog.askopenfilename(filetypes=[('All files','*.*')])
     # messagebox.showinfo('Status',file_path)
     if file_path:
         stu_docs_lable.config(text=file_path)
@@ -71,14 +100,17 @@ stu_class_entry.grid(row=9,column=0,pady=4,padx=4,sticky='w')
 stu_gender=Label(form_frame,text='Student Gender',font=('verdana',13))
 stu_gender.grid(padx=1,pady=0,row=10,column=0,sticky='w')
 
-stu_male_entry=Radiobutton(form_frame,text='Male',font=('verdana',11))
+gender_var=StringVar()
+
+stu_male_entry=Radiobutton(form_frame,variable=gender_var,text='Male',value='male',font=('verdana',11))
 stu_male_entry.grid(row=10,column=0,pady=4,padx=150,sticky='w')
 
-stu_female_entry=Radiobutton(form_frame,text='Female',font=('verdana',11))
+stu_female_entry=Radiobutton(form_frame,variable=gender_var,text='Female',value='female',font=('verdana',11))
 stu_female_entry.grid(row=10,column=0,pady=4,padx=220,sticky='w')
 
-stu_other_entry=Radiobutton(form_frame,text='Other',font=('verdana',11))
+stu_other_entry=Radiobutton(form_frame,variable=gender_var,text='Other',value='other',font=('verdana',11))
 stu_other_entry.grid(row=10,column=0,pady=4,padx=310,sticky='w')
+
 
 # upload button
 stu_image=Button(form_frame,text='Upload Image',font=('verdana',13),command=upload_image)
@@ -89,11 +121,61 @@ stu_image_lable=Label(form_frame,text='No Image Selected',font=('verdana',13))
 stu_image_lable.grid(padx=150,pady=0,row=11,column=0,sticky='w')
 
 # upload docs
-stu_docs=Button(form_frame,text='Upload Docs',font=('verdana',13),command=upload_docs)
+stu_docs=Button(form_frame,text='Upload Docs',font=('verdana',13),width=11,command=upload_docs)
 stu_docs.grid(padx=1,pady=4,row=12,column=0,sticky='w')
 
 # docs label
 stu_docs_lable=Label(form_frame,text='No Docs Found',font=('verdana',13))
-stu_docs_lable.grid(padx=150,pady=0,row=12,column=0,sticky='w')
+stu_docs_lable.grid(padx=180,pady=0,row=12,column=0,sticky='w')
+
+def connect_mysql():
+    mysql_con=mysql.connector.connect(host="localhost",user="root",password="root",database="STUDENT_DATA")
+    return mysql_con
+
+def save():
+    con=connect_mysql()
+    cur=con.cursor()
+    stu_name1=stu_name_entry.get()
+    stu_mobile1=stu_mobile_entry.get()
+    stu_email1=stu_email_entry.get()
+    stu_roll1=stu_roll_entry.get()
+    stu_class1=stu_class_entry.get()
+    stu_gender1=gender_var.get()
+    stu_img1=stu_image_lable.cget("text")
+    stu_doc1=stu_docs_lable.cget("text")
+    print(stu_name1,stu_class1,stu_roll1,stu_mobile1,stu_email1,stu_gender1,stu_img1,stu_doc1)
+
+    try:
+        data=f"""
+        INSERT INTO STUDENT(STU_NAME,STU_CLASS,STU_ROLL,STU_MOB,STU_EMAIL,STU_GENDER,STU_IMG,STU_DOC)
+        VALUES('{stu_name1}',
+        '{stu_class1}',
+        '{stu_roll1}',
+        '{stu_mobile1}',
+        '{stu_email1}',
+        '{stu_gender1}',
+        '{stu_img1}',
+        '{stu_doc1}'
+        )
+        """
+        cur.execute(data)
+        con.commit()
+        messagebox.showinfo('showinfo',"Data Inserted✅")
+        window.destroy()
+    except Exception as e:
+        print(e)
+
+        
+
+    
+
+
+# SAVE DATA BUTTON
+save_data=Button(form_frame,text='Save',font=('verdana',12),width=10,background='green',fg="white",command=save)
+save_data.grid(padx=260,pady=40,row=14,column=0,sticky='w')
+
+
+
+
 
 window.mainloop()

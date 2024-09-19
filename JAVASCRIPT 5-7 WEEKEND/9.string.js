@@ -43,8 +43,9 @@
 
 // 4.Traversing-----------
 // 1.for loop
-let company_name=`Dreamer infotech`
+let company_name=` Dreamer infotech `
 for (let i=0 ; i<company_name.length ; i++){
+    
     console.log(`${company_name[i]}`)
 }
 

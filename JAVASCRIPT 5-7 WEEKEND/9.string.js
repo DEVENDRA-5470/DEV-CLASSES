@@ -43,9 +43,71 @@
 
 // 4.Traversing-----------
 // 1.for loop
-let company_name=` Dreamer infotech `
-for (let i=0 ; i<company_name.length ; i++){
+// let company_name=` Dreamer infotech `
+// for (let i=0 ; i<company_name.length ; i++){
     
-    console.log(`${company_name[i]}`)
-}
+//     console.log(`${company_name[i]}`)
+// }
+
+// 6.In-builted method.
+// let s="Dreamer infotech"
+// let c=s.charAt(1)
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.concat(' faridabad')
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.indexOf('r')
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.includes('x')
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.endsWith('h')
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.startsWith('r')
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.lastIndexOf('e')
+// console.log(c)
+
+// let s="  Dreamer infotech   "
+// console.log(s)
+// // let c=s.trim()
+// // let c=s.trimEnd()
+// let c=s.trimStart()
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.replace("D","k")
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.repeat(3)
+// console.log(c)
+
+// let s="Dreamer infotech"
+// let c=s.slice(2,8)
+// console.log(c)
+
+
+// let s="Dreamer infotech"
+// let c=s.split(' ')
+// let c=s.split()
+// let c=s.split('')
+// console.log(c)
+
+
+// let s="Dreamer infotech"
+// let c=s.toLocaleLowerCase()
+// let u=s.toUpperCase()
+// console.log(c)
+// console.log(u)
 

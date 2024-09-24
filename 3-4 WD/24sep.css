@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0px 0px 10px gray;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.logo h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin-left: 20px;
+    color: #ee8143cc;
+  }
+
+.logo{
+    display:flex;
+}
+
+.logo img{
+    object-fit: contain;
+    object-position: center;
+    height: 60px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+    margin: 20px;
+    font-size: 23px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    background-color:#ff792b;
+    font-size: 22px;
+    border-radius: 5px;
+    color: white;
+}
+
+.main ul{
+    display: flex;
+    align-items: center;
+}
+
+.bg-img{
+    background: linear-gradient(rgba(255, 0, 0, 0.128),rgba(0, 0, 255, 0.084)),url(homepage-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    background-attachment: scroll;
+}
+
+.content{
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+
+}
+
+.content h1{
+    font-size: 6rem;
+}
+
+.content p{
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+.content p:hover{
+    font-size: 1.5rem;
+    line-height: 60px;
+}
+.two_btn button{
+    color: white;
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
+
+.two_btn button:nth-child(1){
+    background:#ff792b;
+    outline: none;
+    border: 1px solid #ff792b;
+}
+.two_btn button:nth-child(2){
+    margin-left: 20px;
+
+    background:none;
+    outline: none;
+    border: 1px solid #ff792b;
+}
+
+.two_btn button:nth-child(2):hover{
+    transition:all 1s;
+    background-color: #ff792b;
+}

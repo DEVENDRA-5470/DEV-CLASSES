@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar start */
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 90px;
+    box-shadow: 0px 0px 10px gray ;
+}
+
+.logo{
+    float: left;
+    margin-left: 150px;
+}
+
+.yoga{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(240, 129, 70);
+}
+
+.menu{
+    float: right;
+    margin-right: 200px;
+    margin-top: 10px;
+}
+.menu span{
+    margin-left: 50px;
+}
+.menu span a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu .btn{
+    padding: 8px;
+    background-color: rgb(242, 150, 11);
+    border: none;
+    font-size: 21px;
+    border-radius: 4px;
+    color: aliceblue;
+}
+
+/* hero section */
+.bg-img{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(225deg,rgba(255, 0, 0, 0.322),rgba(0, 0, 255, 0.573)),url(stu.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}

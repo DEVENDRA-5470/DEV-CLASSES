@@ -1,0 +1,141 @@
+1. Write a JavaScript program to switch two integer values.  
+   Example:  
+   Input:  
+   `n1 = 20`, `n2 = 30`  
+   Output:  
+   `n1 = 30`, `n2 = 20`
+
+2. Write a program to switch two character values.  
+   Example:  
+   Input:  
+   `char1 = "hello"`, `char2 = "JavaScript"`  
+   Output:  
+   `char1 = "JavaScript"`, `char2 = "hello"`
+
+3. Write a program to switch one character with one integer value.  
+   Example:  
+   Input:  
+   `n1 = 200`, `char2 = "JavaScript"`  
+   Output:  
+   `n1 = "JavaScript"`, `char2 = 200`
+
+4. Write a program to switch two character values.  
+   Example:  
+   Input:  
+   `char1 = "hello"`, `char2 = "JavaScript"`  
+   Output:  
+   `char1 = "JavaScript"`, `char2 = "hello"`
+
+5. Write a program to update the balance of a customer.  
+   Example:  
+   Input:  
+   `current_balance = 10000`, `deposit_balance = 5000`  
+   Output:  
+   `Before deposit: current_balance = 10000`  
+   `After deposit: current_balance = 15000`
+
+6. Write a program to update the full name of a customer.  
+   Example:  
+   Input:  
+   `full_name = ""`, `first_name = "hello"`, `last_name = "JavaScript"`  
+   Output:  
+   `Before update: full_name = ""`  
+   `After update: full_name = "hello JavaScript"`
+
+7. Write a program to update the balance of a customer after withdrawal.  
+   Example:  
+   Input:  
+   `current_balance = 10000`, `withdraw_balance = 2000`  
+   Output:  
+   `Before withdrawal: current_balance = 10000`  
+   `After withdrawal: current_balance = 8000`
+
+8. Write a program to calculate the percentage of a student.  
+   Example:  
+   Input:  
+   `obtain_marks = 430`, `out_of = 500`  
+   Output:  
+   `Percentage = ?`
+
+9. Write a program to convert an integer value to a float.
+
+10. Write a program to convert an integer value to a string.
+
+11. Calculate the area of a circle.  
+    Formula:  
+    `Area = pi * r^2`
+
+12. Calculate the perimeter of a rectangle.  
+    Formula:  
+    `Perimeter = 2 * (length + width)`
+
+13. Calculate the volume of a cube.  
+    Formula:  
+    `Volume = side^3`
+
+14. Find the simple interest.  
+    Formula:  
+    `Simple Interest = (P * R * T) / 100`
+
+15. Calculate the Pythagorean theorem.  
+    Formula:  
+    `c = sqrt(a^2 + b^2)`
+
+16. Solve for the slope of a line.  
+    Formula:  
+    `Slope (m) = (y2 - y1) / (x2 - x1)`
+
+17. Calculate the area of a triangle.  
+    Formula:  
+    `Area = 1/2 * base * height`
+
+18. Calculate the circumference of a circle.  
+    Formula:  
+    `Circumference = 2 * pi * r`
+
+19. Find the distance between two points.  
+    Formula:  
+    `Distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)`
+
+20. Calculate profit.  
+    Formula:  
+    `Profit = Selling Price - Cost Price`
+
+21. Calculate loss.  
+    Formula:  
+    `Loss = Cost Price - Selling Price`
+
+22. Calculate profit percentage.  
+    Formula:  
+    `Profit Percentage = (Profit / Cost Price) * 100`
+
+23. Calculate loss percentage.  
+    Formula:  
+    `Loss Percentage = (Loss / Cost Price) * 100`
+
+24.Receipt Printing in JavaScript
+Objective:
+Create a program to generate a formatted receipt based on user input.
+
+Requirements:
+
+Input:
+
+Prompt the user for:
+Name
+Mobile number
+Email address
+Store name
+Details of three items purchased:
+Item name
+Quantity
+Price per unit
+Output:
+
+Display a formatted receipt that includes:
+Customer details (name, mobile, email)
+Store name
+Date and time of the purchase
+List of items purchased with their quantities and total price for each item
+Overall total amount
+Thank you message

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for data in object_list %}
+      
+    <ul>
+        <li>{{data.emp_name}}</li>
+        <li>{{data.emp_mob}}</li>
+        <li>{{data.emp_age}}</li>
+        <li>{{data.emp_email}}</li>
+    </ul>
+    <a href="{% url 'Delete_View' data.id %}"><button>Delete {{data.emp_name}}</button></a>
+    <a href="{% url 'Update_view' data.id %}"><button>Update {{data.emp_name}}</button></a>
+    {% empty %}
+    <h2>No record Found</h2>
+    
+    {% endfor %}
+    <hr>
+
+</body>
+</html>

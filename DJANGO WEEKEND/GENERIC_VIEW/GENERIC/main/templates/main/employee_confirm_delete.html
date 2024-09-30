@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+    <p>Are you sure delete "{{object}}" </p>
+    <a href="{% url 'list_view' %}">No</a>
+    <button type="submit">Yes</button></a>
+</form>
+</body>
+</html>

@@ -1,0 +1,144 @@
+Assignment 2: Conditionals in JavaScript
+
+1. Write a JavaScript program to check if a number is positive, negative, or zero.  
+   Example:  
+   Input: `num = 5`  
+   Output: `The number is positive`
+
+2. Write a program to check if a number is even or odd.  
+   Example:  
+   Input: `num = 8`  
+   Output: `The number is even`
+
+3. Write a program to check whether a person is eligible to vote or not (age must be 18 or above).  
+   Example:  
+   Input: `age = 20`  
+   Output: `You are eligible to vote`
+
+4. Write a program to check if a number is divisible by 5 and 11.  
+   Example:  
+   Input: `num = 55`  
+   Output: `The number is divisible by both 5 and 11`
+
+5. Write a program to find the maximum between two numbers.  
+   Example:  
+   Input: `num1 = 10`, `num2 = 20`  
+   Output: `The maximum number is 20`
+
+
+6. Write a program to find the maximum between three numbers.  
+   Example:  
+   Input: `num1 = 10`, `num2 = 25`, `num3 = 15`  
+   Output: `The maximum number is 25`
+
+7. Write a program to check if a year is a leap year or not.  
+   Example:  
+   Input: `year = 2024`  
+   Output: `The year is a leap year`
+
+8. Write a program to check whether a character is a vowel or consonant.  
+   Example:  
+   Input: `char = 'a'`  
+   Output: `The character is a vowel`
+
+10. Write a program to calculate the grade of a student based on marks obtained.  
+    Example:  
+    Input:  
+    `marks = 85`  
+    Output:  
+    - Marks >= 90: Grade A  
+    - Marks >= 80 and < 90: Grade B  
+    - Marks >= 70 and < 80: Grade C  
+    - Marks >= 60 and < 70: Grade D  
+    - Marks < 60: Grade F  
+
+11. Write a program to find the last two digit of number.  
+    Example:  
+    Input: `num = 121`  
+    Output: `The last two digit is 21`
+
+12. Write a program to check if a triangle is valid based on the angles.  
+    Example:  
+    Input:  
+    `angle1 = 60`, `angle2 = 60`, `angle3 = 60`  
+    Output: `The triangle is valid`  
+    (A triangle is valid if the sum of all three angles is 180 degrees)
+
+
+13. Write a program to check whether a person is a senior citizen (age 60 or above).  
+    Example:  
+    Input: `age = 65`  
+    Output: `You are a senior citizen`
+
+14.UPSC Selection Process in JavaScript
+Objective:
+Write a JavaScript program to determine a candidate's status in the UPSC selection process.
+
+Requirements:
+
+Input: The program should prompt the user for the following information:
+
+Whether the candidate has applied for the exam (yes/no).
+Whether the candidate passed the Preliminary Examination (yes/no).
+Whether the candidate passed the Main Examination (yes/no).
+Whether the candidate passed the Personality Test (yes/no).
+The candidate's marks in the Preliminary Examination.
+The candidate's marks in the Main Examination.
+The candidate's marks in the Personality Test (Interview).
+Minimum Passing Marks:
+
+Set the minimum passing mark for the Preliminary Examination to 50.
+Set the minimum passing mark for the Main Examination to 100.
+Set the minimum passing mark for the Personality Test (Interview) to 30.
+Output: The program should provide feedback on the candidate's status based on the inputs using nested if-else statements.
+
+
+15.Create a program to sort three numbers in ascending order based on user input.
+
+16. Kaun Banega Crorepati (KBC) Program in JavaScript
+Objective:
+Create a simple quiz program based on the Kaun Banega Crorepati (KBC) format using JavaScript. The program should ask five questions and check the user's answers using if-else statements.
+
+Instructions:
+
+The program should prompt the user with five questions, each with four options (A, B, C, D).
+For each question, the program should provide feedback on whether the answer is correct or incorrect.
+At the end of the quiz, the program should display the total score out of five questions.
+Questions:
+
+What is the capital of France?
+A. Berlin
+B. Madrid
+C. Paris
+D. Rome
+
+Which planet is known as the Red Planet?
+A. Earth
+B. Mars
+C. Jupiter
+D. Venus
+
+What is the largest mammal in the world?
+A. Elephant
+B. Blue Whale
+C. Giraffe
+D. Great White Shark
+
+Which element has the chemical symbol 'O'?
+A. Oxygen
+B. Gold
+C. Silver
+D. Helium
+
+What is the hardest natural substance on Earth?
+A. Gold
+B. Diamond
+C. Iron
+D. Quartz
+
+Implementation Steps:
+
+Use prompt() to collect answers from the user for each question.
+Use if-else statements to check the user's answer against the correct answer.
+Maintain a score counter that increments for each correct answer.
+Use alert() to provide feedback for each question and display the final score after all questions are answered.

@@ -1,0 +1,64 @@
+Here are the task descriptions for the assignment in JavaScript:
+
+1. Print all odd and even numbers from 1 to 20:  
+   Use a loop from 1 to 20. For each number, check if it is divisible by 2 (for even numbers). If not, it’s odd.
+
+2. Generate all multiples of 12:  
+   Use a loop to iterate through numbers. For each number, check if it is divisible by 12 and display the multiples.
+
+3. Generate a table of numbers given by taking input:  
+   Take a number from the user and use a loop to print its multiplication table, multiplying it by 1 through 10 (or any other range).
+
+4. Check if a number is prime or not:  
+   Take a number from the user and check whether it is only divisible by 1 and itself (use a loop to check divisibility).
+
+5. Sum of generated numbers from start to end points:  
+   Take two numbers from the user as the start and end points. Use a loop to iterate through this range and sum up the numbers.
+
+6. Multiply generated numbers from start to end points:  
+   Similar to task 5, but instead of summing, multiply all the numbers in the range.
+
+7. Generate the Fibonacci sequence up to a specified number of terms:  
+   Take the number of terms from the user and use a loop to generate the Fibonacci sequence.
+
+8. Generate the factorial of a number given by the user:  
+   Take a number from the user and use a loop to multiply all integers up to that number to get the factorial.
+
+9. Find the greatest character from "python":  
+   Iterate through the string "python" and compare the characters to find the one with the greatest ASCII value.
+
+10. Display all letters except 'm' and 'i' from "Dreamer infotech":  
+   Loop through each character in the string "Dreamer infotech" and display the characters that are not 'm' or 'i'.
+
+11. Print alternate characters of a given string:  
+   Take a string input from the user and use a loop to display every other character (i.e., at even indexes).
+
+12. Reverse the string entered by the user:  
+   Take a string input and loop through it in reverse order to display the characters.
+
+13. Count the total number of strings given by the user:  
+   Split the input string into an array (using space or other delimiters) and count the number of resulting strings.
+
+14. Check if the string is a palindrome or not:  
+   Take a string input and check if it reads the same forwards and backwards.
+
+15. Search for a character within a given string:  
+   Take a string and a character as input. Loop through the string to see if the character exists.
+
+16. Filter out vowels and consonants from a given string:  
+   Iterate through the string and separate vowels (a, e, i, o, u) from consonants.
+
+17. Filter out duplicate characters of a string given by the user:  
+   Loop through the string, and for each character, check if it has already been encountered. If not, display it.
+
+18. Display possible pairs of 3 (e.g., 1:3, 2:3, 3:3):  
+   Use a loop to generate pairs of numbers, where one number remains constant (e.g., 3), and the other is iterated.
+
+19. Generate the pattern of H:  
+   Use loops to generate the pattern of the letter 'H' using asterisks or another character.
+
+20. Check duplicate letters between two strings:  
+   Take two strings, and for each character in the first string, check if it also exists in the second string.
+
+21. Display the square of numbers from 1 to 10:  
+   Loop through the numbers 1 to 10, square each one, and display the result.

@@ -1,0 +1,61 @@
+Here are the descriptions for the JavaScript assignment tasks using a while loop:
+
+1. Generate all possible multiples of a number given by the user:  
+   Continuously multiply the given number by increasing integers until a condition is met (like exceeding a limit).
+
+2. Produce the factorial of a number by taking input from the user:  
+   Calculate the factorial by multiplying all integers from 1 to the number using a while loop.
+
+3. Display all odd and even numbers from the range between 10 to 25:  
+   Use a while loop to iterate through the range and check if each number is odd or even.
+
+4. Generate the table of a number given by the user:  
+   Using a while loop, print the multiplication table (e.g., `2x2=4`) for the input number up to a certain limit.
+
+5. Check if a number is palindrome or not (provided by the user):  
+   Reverse the digits of the number and check if it reads the same forwards and backwards.
+
+6. Generate the Fibonacci series of a number given by the user:  
+   Use a while loop to generate the Fibonacci sequence until reaching the number of terms specified by the user.
+
+7. Check if a number provided by the user is prime:  
+   Check divisibility using a while loop to see if the number is only divisible by 1 and itself.
+
+8. Generate the squares of the first 10 natural numbers:  
+   Use a while loop to square each number from 1 to 10 and display the result (e.g., `Square of 2: 4`).
+
+9. Find the sum of digits by taking input from the user:  
+   Use a while loop to extract and sum each digit of the number provided by the user.
+
+10. Check if a number given by the user is a palindrome:  
+    Convert the number to a string, reverse it, and compare it with the original.
+
+11. Calculate the sum of numbers from the starting point to the ending point (user input):  
+    Use a while loop to sum all numbers from the start to the end range provided by the user.
+
+12. Calculate the product of numbers from the starting point to the ending point (user input):  
+    Similar to task 11, but multiply the numbers instead of summing them.
+
+13. Find the greatest character from the string "python":  
+    Use a while loop to iterate through the string and compare the characters based on their ASCII values to find the largest.
+
+14. Search for a character within the string "Python is a programming language":  
+    Use a while loop to iterate through the string and check if a specific character is present.
+
+15. Filter out all vowels and consonants from a string given by the user:  
+    Use a while loop to iterate through the input string, checking each character to determine if it is a vowel or consonant.
+
+16. Filter out duplicate characters of a string given by the user:  
+    Use a while loop to compare each character in the string and skip duplicates.
+
+17. Find the greatest character from the string "python":  
+    Same as task 13, but repeated to practice.
+
+18. Display all letters except 'm' and 'i' from the string "Dreamer Infotech":  
+    Use a while loop to iterate through the string and skip 'm' and 'i' when displaying the other characters.
+
+19. Print alternate characters of a given string provided by the user:  
+    Use a while loop to iterate through the string and print every second character.
+
+20. Reverse the string given by the user:  
+    Use a while loop to reverse the characters of the input string and display the reversed string.

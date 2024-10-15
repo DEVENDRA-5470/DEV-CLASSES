@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .row1{
+            margin-top: 100px;
+            display: flex;
+            gap: 80px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            align-content: center;
+            text-align: center;
+            font-size: 1.3em;
+            color: white;
+        
+        }
+        .box1{
+            background-color: red;
+            transition: 1s all;
+
+
+        }
+        .box1:hover{
+            transform: translateY(300px);
+        }
+
+        .box2{
+            background-color: greenyellow;
+            transition: 1S;
+        }
+
+        .box2:hover{
+            transform: translateX(300px);
+            
+        }
+        .box3{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box3:hover{
+            transform: translateZ(300px);
+            
+        }
+
+        .box4{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box4:hover{
+            transform: rotateY(70deg);
+            
+        }
+        .box5{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box5:hover{
+            transform: rotateX(180deg);
+            
+        }
+        
+        .box6{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box6:hover{
+            transform: rotateZ(45deg);
+            
+        }
+
+        .box7{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box7:hover{
+            transform: skewX(55deg);
+            
+        }
+
+        .box8{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box8:hover{
+            transform: skewY(5deg);
+            
+        }
+        .box9{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box9:hover{
+            transform: skew(15deg,18deg);
+            
+        }
+        .box10{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box10:hover{
+            transform: scaleX(1.5);
+            
+        }
+        .box11{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box11:hover{
+            transform: scaleY(1.5);
+            
+        }
+        .box12{
+            background-color: rgb(237, 6, 68);
+            transition: 1S;
+        }
+
+        .box12:hover{
+            transform: perspective(500px) scaleZ(3) rotateX(45deg);
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="box box1">Translate Y</div>
+            <div class="box box2">Translate X</div>
+            <div class="box box3">Translate Z</div>
+
+            <div class="box box4">Rotate Y</div>
+            <div class="box box5">Rotate X</div>
+            <div class="box box6">Rotate Z</div>
+
+            <div class="box box7">Skew Y</div>
+            <div class="box box8">Skew X</div>
+            <div class="box box9">Skew </div>
+
+            <div class="box box10">Scale X </div>
+            <div class="box box11">Scale Y </div>
+            <div class="box box12">Scale Z </div>
+
+        </div>
+    </div>
+</body>
+</html>

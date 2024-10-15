@@ -4,7 +4,7 @@
 // 4.Assignment opr
 // 5.Bitwise opr
 // 6.Ternary opr
-// 7.Unary opr
+// 7.Unary opr (++,--)
 
 
 //------------------------------ Arithmatic opr(+,-,*,/,%)

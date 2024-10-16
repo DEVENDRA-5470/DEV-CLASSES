@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/dev/OneDrive/Desktop/DEV-CLASSES/VISHESH CLASSES",
-      "program": "c:/Users/dev/OneDrive/Desktop/DEV-CLASSES/VISHESH CLASSES/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

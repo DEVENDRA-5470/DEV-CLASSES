@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        border: 2px solid ;
+        padding: 20px;
+        width: 50%;
+    }
+    .main:hover ~p ~ h1 {
+        color: red;
+    }
+    .main > p{
+        color: rgb(47, 255, 0);
+    }
+    /* .main + p{
+        color: rgb(0, 38, 255);
+    } */
+</style>
+<body>
+    <!-- Selectors -->
+    <!-- 1.tag selector (h1)-->
+    <!-- 2.class selector (.class) -->
+    <!-- 3.Id Selector (#id) -->
+    <!-- 4.Universal selector (*) -->
+    <!-- 5.Group selector (p,a,h1) -->
+    <!-- Advance selectors/combinators -->
+    <!-- 6.Descendent selector/ Descendant Combinator (div p) -->
+    <!-- 7.Direct Child Combinator  (>)  -->
+    <!-- 8.General Sibling Combinator (~) -->
+    <!-- 9.Adjacent Sibling Combinator (+) -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur Quaerat, tenetur.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vol</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vol</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil vol</p>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, tenetur.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora tempore cumque laudantium ad repellendus aut, maxime distinctio omnis eos labore corporis? Tempora, voluptatum repudiandae ducimus odit voluptates omnis aperiam!</h1>
+</body>
+
+
+
+</html>

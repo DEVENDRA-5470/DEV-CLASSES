@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .col{
+        width: 300px;
+        height: 400px;
+        border: 0.2px solid rgba(0, 0, 0, 0.188) ;
+        border-radius: 5px;
+        padding: 10px;
+        position: relative;
+    }
+    .btn{
+        position: absolute;
+        bottom: 30px;
+    }
+    .row1{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bg{
+    transition: 1s all;
+    background-image: url(s2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+        
+    }
+    .col:hover .bg{
+    
+    background-image: url(stu.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    }
+   
+</style>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="col col-1">
+                <button class="btn">Click Me</button>
+                <div class="bg"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, debitis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, libero.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, debitis?
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

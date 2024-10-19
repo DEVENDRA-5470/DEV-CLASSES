@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="bg-light py-5 py-xl-8">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+          <h3 class="fs-6 mb-2 text-secondary text-center text-uppercase">What We Do?</h3>
+          <h2 class="display-5 mb-5 text-center">We are giving you perfect solutions with our proficient services.</h2>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-xl-0">
+        <div class="col-12 col-sm-6 col-xl-3">
+            {% for post in posts %}
+              
+            <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                    <img width="100%" src="{{post.post_img.url}}" alt="">
+                    <h4 class="mb-4">{{post.topic}}</h4>
+                    <p class="mb-4 text-secondary">{{post.content | truncatewords:20}}</p>
+                    <a href="">Edit</a>
+                    <a href="">Delete</a>
+                    <a href="">Add</a>
+                    <a href="">Veiw More</a>
+                </div>
+            </div>
+        </div>
+        
+        {% endfor %}
+       
+      </div>
+    </div>
+  </section>
+{% endblock content %}

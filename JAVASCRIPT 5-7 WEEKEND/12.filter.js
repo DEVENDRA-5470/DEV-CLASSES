@@ -31,3 +31,31 @@
 // let stu_name=['anshika','aman','yash','khwaish','dev','ajay']
 // let res=stu_name.filter(n=>n[0]=="a")
 // console.log(res)
+
+
+// function great(n){
+//     let g=n[0]
+//     for (let i=0 ; i<n.length ; i++){
+//         if (g.length<n[i].length){
+//             g=n[i]
+//         }
+//     }
+
+//     console.log(g)
+// }
+// let stu_name=['anshika','aman','yash','khwaishldlkjfd','dev','ajay']
+// great(stu_name)
+
+
+
+function great(names) {
+    let longest = names[0];  // Initialize with the first name
+    names.filter(name => {
+        if (name.length > longest.length) {
+            longest = name;  // Update the longest name if a longer one is found
+        }
+    });
+    console.log(longest);
+}
+let stu_name = ['anshika', 'aman', 'yash', 'khwaishldlkjfd', 'dev', 'ajay'];
+great(stu_name);

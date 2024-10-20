@@ -25,3 +25,24 @@ def sign_up(request):
         if auth is not None:
             login(request,auth)
             return redirect('home')
+        
+
+def login_page(request):
+    return render(request,'login.html')
+
+def user_login(request):
+    if request.method=="POST":
+        username=request.POST.get('username')
+        password=request.POST.get('password')
+        print(username,password)
+        user=authenticate(request,username=username,password=password)
+        if user is not None:
+            login(request,user)
+            return redirect('all_posts')
+        else:
+            return HttpResponse("Something went wrong")
+        
+
+def user_logout(request):
+    logout(request)
+    return redirect ('login_page')

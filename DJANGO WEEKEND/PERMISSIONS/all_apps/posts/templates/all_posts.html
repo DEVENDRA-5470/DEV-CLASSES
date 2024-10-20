@@ -21,10 +21,15 @@
                     <img width="100%" src="{{post.post_img.url}}" alt="">
                     <h4 class="mb-4">{{post.topic}}</h4>
                     <p class="mb-4 text-secondary">{{post.content | truncatewords:20}}</p>
-                    <a href="">Edit</a>
-                    <a href="">Delete</a>
+                    {% if perms.posts.add_posts %}
                     <a href="">Add</a>
+                    {% endif %}
+                    {% if perms.posts.delete_post %}
+                    <a href="">Delete</a>
+                    {% else %}
+                    <a href="">Edit</a>
                     <a href="">Veiw More</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

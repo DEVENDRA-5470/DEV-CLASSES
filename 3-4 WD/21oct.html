@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 100%;
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        
+    }
+    /* .box2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 100%;
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        
+    }
+    .box3{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 100%;
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-delay: 3s;
+        
+    } */
+
+    @keyframes anim{
+        0%{
+            margin: 0;
+        }
+        50%{
+            margin-left: 200px;
+            background-color: aqua;
+        }
+
+        75%{
+            margin-left: 400px;
+            background-color: rgb(255, 0, 255);
+
+        }
+
+        100%{
+            margin-left: 800px;
+            background-color: rgb(238, 255, 0);
+
+        }
+    }
+
+
+</style>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

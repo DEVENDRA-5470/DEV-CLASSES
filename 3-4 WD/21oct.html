@@ -13,10 +13,13 @@
         border-radius: 100%;
         animation-name: anim;
         animation-duration: 10s;
-        animation-delay: 1s;
+        /* animation-delay: 1s; */
+        position: absolute;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
         
     }
-    /* .box2{
+    .box2{
         width: 200px;
         height: 200px;
         background-color: red;
@@ -24,6 +27,7 @@
         animation-name: anim;
         animation-duration: 10s;
         animation-delay: 2s;
+        position: absolute;
         
     }
     .box3{
@@ -34,28 +38,34 @@
         animation-name: anim;
         animation-duration: 10s;
         animation-delay: 3s;
+        position: absolute;
         
-    } */
+    }
 
     @keyframes anim{
         0%{
-            margin: 0;
+            transform: translate(0,0);
         }
-        50%{
-            margin-left: 200px;
+        25%{
+            transform: translate(1300px,0); 
             background-color: aqua;
         }
 
+        50%{
+            transform: translate(1300px,480px);
+            background-color: aqua;
+
+        }
+
         75%{
-            margin-left: 400px;
-            background-color: rgb(255, 0, 255);
+            transform: translate(0,480px);
+            background-color: aqua;
 
         }
 
         100%{
-            margin-left: 800px;
-            background-color: rgb(238, 255, 0);
-
+            transform: translate(0,0px);
+            background-color: aqua;
         }
     }
 

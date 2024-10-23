@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p:nth-child(1){
+            color: red;
+        }
+        p:nth-child(2){
+            color: rgb(68, 255, 0);
+        }
+
+        p:nth-child(odd){
+            color: blue;
+        }
+
+        p:not(.p1){
+            background-color: rgb(234, 60, 2);
+        }
+        p:first-child{
+            font-size: 20px;
+        }
+        p:last-child{
+            font-size: 20px;
+            background: none;
+        }
+        .p1::before{
+            content: '✅'
+        }
+        .p1::after{
+            content: '❌';
+        }
+        .p5::first-line{
+            font-size: 2em;
+        }
+        .p6::first-letter{
+            font-size: 2em;
+            color: rgb(250, 248, 248);
+        } */
+
+        /* ^ :startswith */
+
+      /* [class^="p1"]{
+        background-color: rgb(255, 60, 0);
+      } */
+
+      /* [class*="p1"]{
+        background-color: aqua;
+      } */
+
+    /* .main + p{
+        background-color: aqua;
+    } */
+
+    /* .main > p{
+        background-color: aqua;
+    } */
+     
+    /* .main ~ div p:nth-child(3){
+        background-color: aqua;
+        font-size: 30px;
+    } */
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <p class="ap1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, minima.</p>
+        <p class="bp2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, minima.</p>
+        <p class="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, minima.</p>
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, minima.</p>
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, minima.</p>
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, minima.</p>
+    <p class="p6" >Lorem <br> ipsum dolor sit, amet <br> consectetur adipisicing elit. Omnis, minima.</p>
+    <p class="p5">Lorem <br> ipsum  dolor sit, amet consectetur adipisicing elit. Omnis, minima.
+        <br>
+        <span>Lorem ipsum dolor sit amet.</span>
+    </p>
+</div>
+<div>
+
+    <p>Lorem,1111 ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+</div>
+</body>
+</html>

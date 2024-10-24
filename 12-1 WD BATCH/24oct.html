@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        animation-delay: 1s;
+        
+    }
+    .box2{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 38, 255);
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        animation-delay: 2s;
+
+
+    }
+    .box3{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(22, 13, 13);
+        animation-name: anim;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        animation-delay: 3s;
+
+
+
+    }
+    @keyframes anim{
+        0%{
+            background: red;
+            margin:0px;
+        }
+        25%{
+            background-color: green;
+            margin:0px 0px 0px 1300px;
+            transform: rotate(90deg);
+
+            
+
+
+        }
+        50%{
+            background-color: blue;
+            transform: rotate(190deg);
+            margin: 480px 0px 0px 1300px;
+            
+
+        }
+        75%{
+            background-color: yellow;
+            margin: 480px 1300px 0px 0px;
+            transform: rotate(290deg);
+
+
+        }
+        100%{
+            background-color: aqua;
+            transform: rotate(390deg);
+
+        }
+
+    }
+    @keyframes anim1{
+        0%{
+            background: red;
+            margin:0px;
+        }
+        25%{
+            background-color: green;
+            margin:0px 0px 0px 1300px;
+            transform: rotate(90deg);
+
+
+        }
+    }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html

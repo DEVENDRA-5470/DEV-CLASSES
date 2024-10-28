@@ -25,3 +25,6 @@ class Posts(models.Model):
     def __str__(self):
         return f'{self.topic}'
     
+class Comments(models.Model):
+    Posts=models.ManyToManyField()
+    pass

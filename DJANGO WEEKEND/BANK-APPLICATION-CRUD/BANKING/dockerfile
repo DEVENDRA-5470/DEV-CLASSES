@@ -1,0 +1,27 @@
+# Use an official Python runtime as a parent image
+FROM python:3.10-slim
+
+# Set the working directory in the container to /banking
+WORKDIR /banking
+
+# Install any dependencies specified in requirements.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the Django project files to the container
+COPY . .
+
+# Expose port 8000 for the Django development server
+EXPOSE 8000
+
+# Set environment variables
+# Set environment variables
+ENV DJANGO_SETTINGS_MODULE=myproject.settings
+ENV PYTHONUNBUFFERED=1
+
+# Run Django commands to prepare the application
+RUN python manage.py collectstatic --noinput
+RUN python manage.py migrate
+
+# Start the Django server
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

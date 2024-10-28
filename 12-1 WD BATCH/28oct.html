@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        background-color: red;
+        width: 300px;
+        height: 200px;
+        margin: 190px auto;
+    }
+
+    @media (max-width:576px){
+        .box{
+            background-color: blue;
+
+        }
+    }
+    @media (min-width:577px) and (max-width:992px){
+        .box{
+            background-color: aqua;
+        }
+    }
+    @media (min-width:993px) and (max-width:1200px){
+        .box{
+            background-color: rgb(255, 0, 238);
+            height: 300px;
+        }
+    }
+
+    @media (min-width:1200px) and (min-width:1400px){
+        .box{
+            background-color: rgb(255, 242, 0);
+            height: 700px;
+        }
+    }
+</style>
+<body>
+    <!-- Breakpoints -->
+    <!-- ≥576px -->
+    <!-- 576px - 768px -->
+    <!-- 769px - 992px -->
+    <!-- 993px - 1200px -->
+    <!-- 1201px - 1400px -->
+
+
+    <div class="box"></div>
+    
+</body>
+</html>

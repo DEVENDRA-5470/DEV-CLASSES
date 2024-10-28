@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load custom_tags %}
 {% block content %}
 <section class="bg-light py-5 py-xl-8">
     <div class="container">
@@ -21,13 +22,11 @@
                     <img width="100%" src="{{post.post_img.url}}" alt="">
                     <h4 class="mb-4">{{post.topic}}</h4>
                     <p class="mb-4 text-secondary">{{post.content | truncatewords:20}}</p>
-                    {% if perms.posts.add_posts %}
-                    <a href="">Add</a>
-                    {% endif %}
-                    {% if perms.posts.delete_post %}
+                    {% if request.user|has_group:"edit_view_grp" %}
+                    <a href="">Edit</a>
                     <a href="">Delete</a>
                     {% else %}
-                    <a href="">Edit</a>
+                    <a href="">Add</a>
                     <a href="">Veiw More</a>
                     {% endif %}
                 </div>

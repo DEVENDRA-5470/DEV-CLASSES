@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(4, 202, 202);
+    padding: 10px;
+    position: relative;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .menu ul {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+nav .menu ul li {
+    margin-right: 40px;
+}
+
+nav .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .burger {
+    font-size: 25px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+@media (max-width: 999px) {
+    nav .menu {
+        display: none; /* Hide by default in mobile view */
+        background-color: aqua;
+        width: 97%;
+        position: absolute;
+        top: 63px;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    nav .menu ul {
+        display: block;
+        margin-right: 0; /* Reset margin for mobile */
+    }
+
+    nav .menu ul li {
+        background-color: red;
+        display: block;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    nav .burger {
+        display: block; /* Show burger icon in mobile view */
+    }
+
+   
+}
+
+    
+
+

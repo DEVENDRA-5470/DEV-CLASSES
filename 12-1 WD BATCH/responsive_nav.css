@@ -6,17 +6,18 @@
 
 nav {
     background-color: rgb(4, 202, 202);
-    padding: 10px;
-    position: relative;
+    
 }
 
 nav .logo {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 10px;
+    position: relative;
 }
 
-nav .menu ul {
+nav .menu ul{
     list-style: none;
     display: flex;
     margin-right: 50px;
@@ -37,7 +38,7 @@ nav .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 nav .burger {
@@ -45,37 +46,100 @@ nav .burger {
     cursor: pointer;
     display: none; /* Initially hidden */
 }
-
+/* responsive nav */
 @media (max-width: 999px) {
     nav .menu {
         display: none; /* Hide by default in mobile view */
-        background-color: aqua;
-        width: 97%;
+        background-color: rgba(0, 255, 255, 0.356);
+        width: 100%;
         position: absolute;
         top: 63px;
-        height: 100vh;
+        height: 50vh;
+        right: 0;
         justify-content: center;
         text-align: center;
     }
     
     nav .menu ul {
         display: block;
-        margin-right: 0; /* Reset margin for mobile */
+        margin-top: 50px;
+        margin-right: 0px;
     }
 
-    nav .menu ul li {
+    nav .menu ul li{
+        margin-top: 30px;
+    } 
+    
+    nav .menu ul li a{
         background-color: red;
-        display: block;
-        margin-top: 50px;
-        padding: 10px;
-    }
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    } 
 
     nav .burger {
         display: block; /* Show burger icon in mobile view */
     }
 
-   
+    
+    #same:checked ~ .menu{
+        display: block;
+    }
 }
+
+/* container-1 */
+.container-1 .row-1{
+    /* border: 3px solid green; */
+    padding: 10px;
+}
+.container-1 .row-1 .col{
+    padding: 10px;
+    width: 300px;
+    /* border: 2px solid red; */
+}
+.container-1 .row-1 .col img{
+width: 100%;
+}
+
+.container-1 .row-1 .col .btn-1{
+border: none;
+background:linear-gradient(190deg,purple,rgb(0, 255, 183));
+padding: 5px;
+font-size: 1.1em;
+margin-top: 10px;
+color: white;
+border-radius: 2px;
+}
+.container-1 .row-1 .col{
+    box-shadow: 1px 1px 5px 1px gray;
+    border-radius: 2px;
+}
+
+.container-1 .row-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width:999px){
+    .container-1 .row-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container-1 .row-1 .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 
     
 

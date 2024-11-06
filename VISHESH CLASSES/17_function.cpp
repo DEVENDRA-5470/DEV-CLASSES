@@ -59,8 +59,8 @@ int main(){
 
 // 3.Take Nothing return Something
 int add(){ // Parameter
-    int a=90;
-    int b=80;
+    int a=9;
+    int b=8;
     int res;
     res=a+b;
     return res;
@@ -70,6 +70,13 @@ int main(){
     int data;
     data=add(); // Arguments
     cout << data << endl;
+    for (int i=0 ; i<data ; i++){
+            if (i==10 || i==5 || i==12){
+                //break;
+                continue;
+            }
+        cout << i << endl;
+    }
 
 
 }

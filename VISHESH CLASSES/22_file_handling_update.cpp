@@ -8,7 +8,7 @@ void updateFile(const string& filename ,const string& oldline ,const string& new
     ofstream temp_file("vishesh1.txt");
 
     if (!input_file || !temp_file){
-        cerr <<"Error opening Files" << endl;
+        cerr <<"Error opening File" << endl;
         return ;
     }
 

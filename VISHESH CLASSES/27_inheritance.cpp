@@ -12,12 +12,12 @@ Types of inheritance:
         A derived class with only one base class.
 
     2.Multiple inheritance :
-        A one base class  with more than derived class.
+        A one base/parent class  with more than one derived class.
 
     3.Multilevel inheritance :
         A class derived from another derived class.
 
-    4.Heirarchial inheritance :
+    4.Hierarchial inheritance :
         Multiple classes derived from a single base class.
 
     5.Hybrid inheritance :
@@ -59,7 +59,9 @@ int main(){
 }*/
 
 
+
 // 2.Multiple inheritance.
+/*
 #include <iostream>
 using namespace std;
 // Base Class
@@ -89,6 +91,14 @@ public:
     string c2_home="None";
 };
 
+// Derived class3
+class Child3 : public Parent{
+public:
+    int c3_money=10000;
+    string c3_car="None";
+    string c3_home="None";
+};
+
 int main(){
     Child1 c1;
 
@@ -102,4 +112,197 @@ int main(){
     cout << "CHILD2 MONEY : "<<c2.p_money << endl;
     cout << "CHILD2 CAR : "<<c2.c2_car << endl;
     cout << "CHILD2 HOME : "<<c2.c2_home << endl;
+
+}
+*/
+
+/*
+// 3.Multilevel inheritance :
+
+#include <iostream>
+using namespace std;
+class Grand_Parent{
+public:
+    int g_money=1000000;
+    string g_car="verna";
+    string g_home="8bhk";
+
+
+};
+
+class Parent : public Grand_Parent{
+public:
+    int p_money=800000;
+    string p_car="Wagonr";
+    string p_home="4bhk";
+
+
+};
+
+// Derived class1
+
+class Child1 : public Parent{
+public:
+    int c1_money=20000;
+    string c1_car="None";
+    string c1_home="1bhk";
+};
+
+// Derived class2
+class Child2 : public Parent{
+public:
+    int c2_money=10000;
+    string c2_car="None";
+    string c2_home="None";
+};
+
+// Derived class3
+class Child3 : public Parent{
+public:
+    int c3_money=10000;
+    string c3_car="None";
+    string c3_home="None";
+};
+
+int main(){
+    Child1 c1;
+
+    cout << "====== CHILD1 Details======" << endl;
+    cout << "CHILD1 MONEY : "<<c1.p_car << endl;
+    cout << "CHILD1 CAR : "<<c1.c1_car << endl;
+    cout << "CHILD1 HOME : "<<c1.c1_home << endl;
+
+    Child2 c2;
+    cout << "====== CHILD2 Details======" << endl;
+    cout << "CHILD2 MONEY : "<<c2.g_money << endl;
+    cout << "CHILD2 CAR : "<<c2.c2_car << endl;
+    cout << "CHILD2 HOME : "<<c2.c2_home << endl;
+
+}
+*/
+/*
+//4.Hierarchial inheritance :
+
+#include <iostream>
+using namespace std;
+class Grand_Parent{
+public:
+    int g_money=1000000;
+    string g_car="verna";
+    string g_home="8bhk";
+
+
+};
+
+class Parent : public Grand_Parent{
+public:
+    int p_money=800000;
+    string p_car="Wagonr";
+    string p_home="4bhk";
+
+
+};
+
+// Derived class1
+
+class Child1 : public Grand_Parent {
+public:
+    int c1_money=20000;
+    string c1_car="None";
+    string c1_home="1bhk";
+};
+
+// Derived class2
+class Child2 : public Grand_Parent{
+public:
+    int c2_money=10000;
+    string c2_car="None";
+    string c2_home="None";
+};
+
+// Derived class3
+class Child3 : public Grand_Parent{
+public:
+    int c3_money=10000;
+    string c3_car="None";
+    string c3_home="None";
+};
+
+int main(){
+    Child1 c1;
+
+    cout << "====== CHILD1 Details======" << endl;
+    cout << "CHILD1 MONEY : "<<c1.g_money << endl;
+    cout << "CHILD1 CAR : "<<c1.c1_car << endl;
+    cout << "CHILD1 HOME : "<<c1. << endl;
+
+    Child2 c2;
+    cout << "====== CHILD2 Details======" << endl;
+    cout << "CHILD2 MONEY : "<<c2.g_money << endl;
+    cout << "CHILD2 CAR : "<<c2.c2_car << endl;
+    cout << "CHILD2 HOME : "<<c2.c2_home << endl;
+
+}
+*/
+// 5.Hybrid inheritance :
+
+#include <iostream>
+using namespace std;
+class Grand_Parent{
+public:
+    int g_money=1000000;
+    string g_car="verna";
+    string g_home="8bhk";
+
+
+};
+
+class Parent : public Grand_Parent{
+public:
+    int p_money=800000;
+    string p_car="Wagonr";
+    string p_home="4bhk";
+
+
+};
+
+// Derived class1
+
+class Child1 : public Grand_Parent public Parent {
+public:
+    int c1_money=20000;
+    string c1_car="None";
+    string c1_home="1bhk";
+};
+
+// Derived class2
+class Child2 : public Grand_Parent{
+public:
+    int c2_money=10000;
+    string c2_car="None";
+    string c2_home="None";
+};
+
+// Derived class3
+class Child3 : public Grand_Parent{
+public:
+    int c3_money=10000;
+    string c3_car="None";
+    string c3_home="None";
+};
+
+int main(){
+    Child1 c1;
+
+    cout << "====== CHILD1 Details======" << endl;
+    cout << "CHILD1 MONEY : "<<c1. << endl;
+    cout << "CHILD1 CAR : "<<c1.c1_car << endl;
+    cout << "CHILD1 HOME : "<<c1. << endl;
+
+    Child2 c2;
+    cout << "====== CHILD2 Details======" << endl;
+    cout << "CHILD2 MONEY : "<<c2. << endl;
+    cout << "CHILD2 CAR : "<<c2.c2_car << endl;
+    cout << "CHILD2 HOME : "<<c2.c2_home << endl;
+
 }

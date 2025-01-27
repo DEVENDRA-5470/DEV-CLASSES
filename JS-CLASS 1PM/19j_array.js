@@ -168,6 +168,192 @@
 // // arr.splice(0)
 // console.log(arr)
 
+ forEach**
+Executes a function for each array element.
+```javascript
+let ar = [1, 2, 3, 4];
+ar.forEach((element, index, arr) => {
+    console.log(element, index, arr); 
+});
+// Logs each element, index, and the full array
+```
+
+---
+
+### **2. flat**
+Flattens nested arrays into a single-level array.
+```javascript
+let arr = [1, 2, [3, 4]];
+console.log(arr.flat()); // [1, 2, 3, 4]
+
+let deeperArr = [1, 2, [3, [4, 5]]];
+console.log(deeperArr.flat(2)); // [1, 2, 3, 4, 5]
+console.log(deeperArr.flat(Infinity)); // Fully flattens nested arrays
+```
+
+---
+
+### **3. map**
+Creates a new array by applying a function to each element.
+```javascript
+let arr = [1, 2, 3];
+let doubled = arr.map(value => value * 2);
+console.log(doubled); // [2, 4, 6]
+```
+
+---
+
+### **4. filter**
+Creates a new array with elements that pass the condition.
+```javascript
+let arr = [1, 2, 3, 4];
+let evens = arr.filter(value => value % 2 === 0);
+console.log(evens); // [2, 4]
+```
+
+---
+
+### **5. find**
+Finds the first element that satisfies the condition.
+```javascript
+let arr = [1, 2, 3];
+let found = arr.find(value => value > 1);
+console.log(found); // 2
+```
+
+---
+
+### **6. findIndex**
+Returns the index of the first element that satisfies the condition.
+```javascript
+let arr = ["a", "b", "c"];
+let index = arr.findIndex(value => value > "a");
+console.log(index); // 1
+```
+
+---
+
+### **7. slice**
+Returns a portion of the array.
+```javascript
+let arr = [1, 2, 3, 4];
+let sliced = arr.slice(1, 3);
+console.log(sliced); // [2, 3]
+```
+
+---
+
+### **8. every**
+Checks if all elements satisfy the condition.
+```javascript
+let arr = [2, 4, 6];
+console.log(arr.every(value => value % 2 === 0)); // true
+```
+
+---
+
+### **9. some**
+Checks if at least one element satisfies the condition.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.some(value => value % 2 === 0)); // true
+```
+
+---
+
+### **10. sort**
+Sorts the array.
+```javascript
+let arr = [3, 1, 2];
+arr.sort();
+console.log(arr); // [1, 2, 3]
+
+let nums = [5, 2, 9, 1];
+nums.sort((a, b) => a - b); // Ascending order
+console.log(nums); // [1, 2, 5, 9]
+```
+
+---
+
+### **11. join**
+Joins all elements into a string.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.join('-')); // "1-2-3"
+```
+
+---
+
+### **12. toString**
+Converts the array to a string.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.toString()); // "1,2,3"
+```
+
+---
+
+### **13. copyWithin**
+Copies part of the array to another location in the array.
+```javascript
+let arr = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3); 
+console.log(arr); // [4, 5, 3, 4, 5]
+```
+
+---
+
+### **14. keys, values, entries**
+- **`keys()`**: Iterates over array indices.
+- **`values()`**: Iterates over array values.
+- **`entries()`**: Iterates over key-value pairs.
+```javascript
+let arr = ['a', 'b', 'c'];
+for (let key of arr.keys()) console.log(key); // 0, 1, 2
+for (let value of arr.values()) console.log(value); // 'a', 'b', 'c'
+for (let [index, value] of arr.entries()) console.log(index, value); // 0 'a', 1 'b', 2 'c'
+```
+
+---
+
+### **15. isArray**
+Checks if the value is an array.
+```javascript
+let arr = [1, 2, 3];
+console.log(Array.isArray(arr)); // true
+console.log(Array.isArray({})); // false
+```
+
+---
+
+### **16. fill**
+Fills the array with a specific value from a start to an end index.
+```javascript
+let arr = [1, 2, 3, 4];
+arr.fill(0, 1, 3);
+console.log(arr); // [1, 0, 0, 4]
+```
+
+---
+
+### **17. Array.from**
+Creates an array from an iterable or array-like object.
+```javascript
+let str = '123';
+let arr = Array.from(str, Number);
+console.log(arr); // [1, 2, 3]
+```
+
+---
+
+### **18. Clearing an Array**
+Sets the array length to 0 to clear all elements.
+```javascript
+let arr = [1, 2, 3];
+arr.length = 0;
+console.log(arr); // []
+```
+
 // -------------- Array Destructuring..
 // Array destructuring allow you to unpack values from array or iterables
 // into distinct variable

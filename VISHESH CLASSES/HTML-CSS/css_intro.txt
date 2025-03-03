@@ -1,0 +1,16 @@
+1.Inline css : it apply inside html tag
+2.Internal css : it apply by using style tag in html file.
+3.External css : By using extra css filename file_name.css
+
+1.tag selector (h1,h2,p)
+2.class selector (.clsss)
+3.id selector (#id)
+4.Advance selector
+
+block-level element have 100% width of screen by default.
+margin
+padding
+color
+background-color
+
+Create a card which include img > h1 > p > button

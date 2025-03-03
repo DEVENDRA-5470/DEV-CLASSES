@@ -1,0 +1,31 @@
+/* h1{
+    color: blue;
+} */
+
+.Vishesh{
+    color: blue;
+   
+}
+.dev{
+    color: green;
+   
+}
+
+.bg{
+    background-color: yellow;
+}
+
+.my-div{
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    /* margin: auto; */
+    /* margin-top: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 300px; */
+    /* margin: 400px; */
+    padding: 10px;
+    padding-top: 100px;
+    padding-left: 100px;
+}

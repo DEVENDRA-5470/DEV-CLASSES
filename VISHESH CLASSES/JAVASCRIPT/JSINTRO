@@ -1,0 +1,22 @@
+Javascript is server(backend) and client(frontend) side scripting and object oriented programming language.
+
+Types of applying Js.
+Internal Js
+External Js
+
+Features of Js.
+1.Dynamic typed language.
+2.Loose Typing and coercion . "5"+3 = "53"
+3.Easly Integrate with HTML-CSS. let a = "<h1>dev</h1>"
+4.DOM(Document Objcet Model) Manipulation.
+5.Synchronous(single threaded code:one by one) and Asynchronous(multi threaded code:not wait for previous) Programming.
+6.Event-Driven 
+7.Object Oriented (oops)
+8.Rich Libraries (Reactjs,vuejs,expressjs).
+9.Browser or Nodejs.
+
+Application of Javascript.
+1.Web Development.
+2.Game Development.
+3.Iot (Internet of things).
+4.Desktop Application.

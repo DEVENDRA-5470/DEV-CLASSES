@@ -1,0 +1,44 @@
+.card{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+ 
+}
+.card1{
+    background-color: red;
+    /* float: right; */
+    align-self: flex-start;
+    
+}
+.card2{
+   background-color: blue;
+   /* float: right; */
+}
+.card3{
+    background-color: yellow;
+    /* float: right; */
+    align-self: flex-start;
+}
+.card4{
+    background-color: rgb(255, 0, 183);
+    /* float: right; */
+    align-self: flex-end;
+}
+
+
+
+.row{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    text-align: center;
+   align-items: flex-start;
+   align-items: flex-end;
+   align-items: center;
+}

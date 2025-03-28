@@ -1,6 +1,6 @@
 .card{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border: 2px solid red;
  
 }
@@ -8,27 +8,56 @@
     background-color: red;
     /* float: right; */
     align-self: flex-start;
+ 
     
 }
+
+.card1:hover{
+    transition: 1s all;
+    transform: translateX(60px);
+    transform: translateY(60px);
+    transform: translate(-60px,-90px);
+}
+
 .card2{
    background-color: blue;
    /* float: right; */
+}
+
+.card2:hover{
+    transition: 1s all;
+    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
+    transform: rotate(-180deg,70deg);
 }
 .card3{
     background-color: yellow;
     /* float: right; */
     align-self: flex-start;
 }
+.card3:hover{
+    transition: 1s all;
+    transform: scaleX(1.8);
+    transform: scaleY(1.3);
+}
+
 .card4{
     background-color: rgb(255, 0, 183);
     /* float: right; */
-    align-self: flex-end;
+    /* align-self: flex-end; */
+}
+
+.card4:hover{
+    transition: 1s all;
+    transform: skewX(150deg);
+    transform: skewY(150deg);
+    transform: skew(10deg,20deg);
 }
 
 
 
 .row{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 100vh;
     display: flex;
     /* flex-direction: row-reverse;
@@ -37,8 +66,8 @@
     justify-content: space-between;
     justify-content: space-around;
     justify-content: space-evenly;
-    text-align: center;
+    /* text-align: center;
    align-items: flex-start;
    align-items: flex-end;
-   align-items: center;
+   align-items: center; */
 }

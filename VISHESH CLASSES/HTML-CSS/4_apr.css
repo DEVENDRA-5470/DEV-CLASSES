@@ -1,0 +1,94 @@
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.box-1{
+    background-color: red;
+    animation-name: first;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.box-2{
+    background-color: rgb(0, 128, 255);
+    animation-name: second;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+
+
+
+
+}
+.box-3{
+    background-color: rgb(0, 255, 128);
+    animation-name: third;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    animation-iteration-count: infinite;
+
+
+
+
+}
+
+@keyframes first{
+    0%{
+        width: 0%;
+    }
+    25%{
+        background-color: blue;
+        width: 25%;
+
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        background-color: aqua;
+        width: 100%;
+
+
+    }
+}
+@keyframes second{
+    0%{
+        width: 0%;
+    }
+    25%{
+        background-color: blue;
+        width: 25%;
+
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        background-color: aqua;
+        width: 100%;
+
+
+    }
+}
+@keyframes third{
+    0%{
+        width: 0%;
+    }
+    25%{
+        background-color: blue;
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        background-color: aqua;
+        width: 100%;
+
+
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/manual-create/">
+        {% csrf_token %}
+        <label for="">Task-Title</label>
+        <input type="text" name="task_title" id="">
+        <br>
+        <br>
+        <label for="">Task-Description</label>
+        <input type="text" name="task_desc" id="">
+        
+        <input  type="hidden" name="token" value="{{token}}">
+
+        <button type="submit">Save Data</button>
+    </form>
+</body>
+</html>

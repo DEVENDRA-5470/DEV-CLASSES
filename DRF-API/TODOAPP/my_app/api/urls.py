@@ -1,5 +1,7 @@
 from django.urls import path
 from my_app.api.views import *
+from rest_framework.authtoken.views import obtain_auth_token
+
 urlpatterns = [
     # path("",all_task),
     # path("task/<int:pk>/",task),
@@ -15,5 +17,7 @@ urlpatterns = [
     path("create-task/",create_task.as_view()),
     path("update-task/<int:pk>",update_task.as_view()),
     path("all-action/<int:pk>",all_action.as_view()),
-    
+    path("get-token/",obtain_auth_token),
+    path('manual-create/',manual_create_task)
+ 
 ]

@@ -1,9 +1,15 @@
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
+
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import  generics, permissions
 from my_app.api.serializers import My_tode_ser
 from my_app.models import My_todo
-from rest_framework import generics,permissions
+from rest_framework.authentication import TokenAuthentication
+from django.contrib.auth.decorators import login_required
+from rest_framework.authtoken.models import Token
+
 
 
 # @api_view(["GET"])
@@ -76,6 +82,7 @@ from rest_framework import generics,permissions
 class All_task(generics.ListAPIView):
     queryset = My_todo.objects.all()
     serializer_class = My_tode_ser
+    
 
 class get_task(generics.RetrieveAPIView):
     queryset = My_todo.objects.all()
@@ -86,13 +93,17 @@ class delete_task(generics.DestroyAPIView):
     queryset = My_todo.objects.all()
     serializer_class = My_tode_ser
     lookup_field="pk"
-    permission_classes=[permissions.IsAuthenticatedOrReadOnly]
-
+ 
 
 class create_task(generics.CreateAPIView):
     queryset = My_todo.objects.all()
     serializer_class = My_tode_ser
-    
+    permission_classes=[permissions.IsAuthenticated]
+    authentication_classes=[TokenAuthentication]
+
+    def perform_create(self, serializer):
+        serializer.save(task_created_by=self.request.user)
+ 
 class update_task(generics.UpdateAPIView):
     queryset = My_todo.objects.all()
     serializer_class = My_tode_ser
@@ -102,3 +113,18 @@ class all_action(generics.RetrieveUpdateDestroyAPIView):
     queryset = My_todo.objects.all()
     serializer_class = My_tode_ser
     lookup_field="pk"
+
+
+@login_required
+def manual_create_task(request):
+    if request.method=="POST":
+        user=request.user
+        title=request.POST.get("task_title")
+        desc=request.POST.get("task_desc")
+
+        My_todo.objects.create(task_title=title,task_desc=desc,task_created_by=user)
+        return redirect("/all-task/")
+
+    else:
+        token,created=Token.objects.get_or_create(user=request.user)
+        return render(request,'manual_task.html',{'token':token.key})

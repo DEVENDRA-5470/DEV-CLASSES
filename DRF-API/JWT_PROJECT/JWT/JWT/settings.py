@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'jwt_app',
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
-    'rest_framework.authtoken'
+    'rest_framework_simplejwt',
+
+
 ]
 
 MIDDLEWARE = [
@@ -54,8 +56,7 @@ MIDDLEWARE = [
 ]
 
 REST_FRAMEWORK={
-    'DEFUALT_AUTHENTICATION_CLASSES':['rest_framework_simplejwt.authentication.JWTAuthentication',
-                                      'rest_framework.authentication.TokenAuthentication']
+    'DEFAULT_AUTHENTICATION_CLASSES':['rest_framework_simplejwt.authentication.JWTAuthentication']
 }
 
 ROOT_URLCONF = 'JWT.urls'

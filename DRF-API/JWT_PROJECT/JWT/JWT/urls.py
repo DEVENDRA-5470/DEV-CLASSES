@@ -22,6 +22,7 @@ from rest_framework_simplejwt.views import (TokenBlacklistView,TokenObtainPairVi
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('show_notes/',Show_notes.as_view(),name="show_notes"),
-    path('token/',TokenObtainPairView.as_view(),name='token_obtain_pair')
+    path('token/',TokenObtainPairView.as_view(),name='token_obtain_pair'),
+    path('token/logout/',TokenBlacklistView.as_view(),name='token_blacklist'),
 
 ]

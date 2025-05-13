@@ -5,5 +5,6 @@ from .serializer import NoteSerilizer
 
 class Show_notes(generics.ListAPIView):
     queryset = Note.objects.all()
-    serializer_class=NoteSerilizer
-    permission_classes = [IsAuthenticated & IsAdminUser]
+    serializer_class = NoteSerilizer
+    permission_classes = [IsAuthenticated]
+

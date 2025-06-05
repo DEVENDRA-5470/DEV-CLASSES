@@ -164,6 +164,63 @@
 // console.log(res)
 
 
+// let my_arr=[10,30,40,50,60,70,80,90]
+// res=my_arr.entries()
+// for (let [i,v] of res){
+//     console.log(i,v)
+// }
+
+
+// let my_arr=[10,30,40,50,60,70,80,90]
+// res=my_arr.fill(0)
+// res=my_arr.fill("vishesh",-2)
+// console.log(res)
+
+
+// let my_arr=[10,30,40,50,60,70,80,90]
+// res=my_arr.filter(),map(),reduce() // function topic ke baad.
+// console.log(res)
+
+
+// let prompt=require('prompt-sync')();
+// let name=prompt("Enter your name : ")
+// console.log(name)
+
+
+// let my_arr=[10,30,40,[50,60],70,80,[90,[2,3,4]]]
+// res=my_arr.flat(Infinity)
+// console.log(res)
+
+
+// let my_arr=[10,,34,,,50,60,,,10]
+// res=my_arr.flat()
+// console.log(res)
+
+// let my_arr=[10,30,40,50,60,70,80,90,2,3,400]
+// res=my_arr.some(s=>s>90)
+// console.log(res)
+
+// let my_arr=[10,30,40,50,60,70,80,90,2,3,4]
+// res=my_arr.sort((a,b)=> a-b)
+// console.log(res)
+
+
+// let my_arr=[10,30,40,50,60,70,80,90,2,3,400]
+// res=my_arr.values()
+
+// for (let val of res){
+//     console.log(val)
+// }
+
+
+// let my_arr=[10,30,40,50,60,70,80,90,2,3,400]
+// res=my_arr.toLocaleString()
+// console.log(res)
+
+
+// let my_arr=[10,30,40,50,60,70,80,90,2,3,400]
+// res=my_arr.toString()
+// console.log(res)
 
 
 

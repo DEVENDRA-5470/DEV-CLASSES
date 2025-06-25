@@ -32,14 +32,72 @@
 // console.log(str1)
 
 // String Traversion.
-let str1="i am learning mearn stack"
-let size=str1.length;
-for (let i=0;i<size;i++){
-    if (str1[i]=='n'){
-        break;
-    }
-    console.log(str1[i])
-}
+// let str1="learningstack"
+// for (let i=0; i<str1.length; i++){
+//     console.log(str1[i])
+// }
+
 
 
 // String in-built methods.
+// let str1="learningstack"
+// res=str1.at(-5)
+// console.log(res)
+
+
+// let str1="learningstack"
+// res=str1.charAt(-5)
+// console.log(res)
+
+
+// let str1="top 5 books"
+// res=str1.endsWith('books')   
+// console.log(res)
+
+// let str1="top 5 books"
+// res=str1.startsWith("top") 
+// console.log(res)
+
+// let str1="top 5 books "
+// let str2="top 10 readers"
+// // res=str1.concat(str2) 
+// res=str1+str2
+// console.log(res)
+
+
+// let str1="top 5 books "
+// res=str1.includes("sk")
+// console.log(res)
+
+
+
+// let str1="  top 5 books      "
+// console.log(str1)
+// res=str1.trimStart()
+// res=str1.trimEnd()
+// res=str1.trim()
+// console.log(res)
+
+// let str1="Top 5 books"
+// res=str1.toLowerCase()
+// console.log(res)
+
+// let str1="Top 5 books"
+// res=str1.toUpperCase()
+// console.log(res)
+
+
+// let str1="Top 5 books"
+// res=str1.slice(1,5)
+// console.log(res)
+
+
+// let str1="Top 5 books"
+// res=str1.split() // whole string 
+// res=str1.split('') // char by char
+// res=str1.split(' ') // word by word
+
+// console.log(res)
+
+// String complete.
+
